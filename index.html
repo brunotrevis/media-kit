@@ -3,287 +3,974 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Seja patrocinador · 1ª Corrida da Ternura — Media Kit</title>
-<meta name="description" content="Associe sua marca à 1ª Corrida da Ternura: evento esportivo, familiar e comunitário com 500 a 600 atletas em Guarapuava/PR. Cotas Master, Ouro, Prata, Bronze e Apoio.">
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="Seja patrocinador da 1ª Corrida da Ternura">
-<meta property="og:description" content="500 a 600 atletas, forte presença regional e uma edição inaugural com espaço para marcas fundadoras.">
-<meta property="og:image" content="assets/og-image-mediakit.jpg"><!-- [[SUBSTITUIR]] 1200x630 -->
-<meta name="theme-color" content="#0B3B38">
-
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<title>1ª Corrida da Ternura — Brandbook & Direção Criativa</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+<style>
+  :root{
+    --teal:#0FB2A6; --teal-deep:#0B3B38; --coral:#FF6A5A; --amber:#FFB24C;
+    --sand:#FBF6EE; --graphite:#1E2A29; --mist:#DBF1EC; --white:#fff;
+    --muted:#5B6B69; --line:#E7E0D4; --line-dark:#1C4B46;
+    --shadow:0 14px 40px -18px rgba(11,59,56,.35);
+    --shadow-sm:0 6px 18px -10px rgba(11,59,56,.35);
+    --radius:20px; --radius-sm:14px;
+    --font-display:'Sora','Segoe UI',system-ui,sans-serif;
+    --font-text:'Inter','Segoe UI',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--sand);color:var(--graphite);font-family:var(--font-text);line-height:1.65;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;margin:0}
+  p{margin:0 0 1em}
+  a{color:var(--teal-deep)}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+  /* ---------- Top nav ---------- */
+  .topbar{position:sticky;top:0;z-index:50;background:rgba(251,246,238,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .topbar .wrap{display:flex;align-items:center;gap:18px;height:64px}
+  .brandmini{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:800;color:var(--teal-deep);font-size:15px;white-space:nowrap}
+  .brandmini svg,.brandmini img{height:30px;width:auto;flex:none}
+  .coverlogo{height:auto}
+  .navlinks{display:flex;gap:4px;overflow-x:auto;margin-left:auto;scrollbar-width:none}
+  .navlinks::-webkit-scrollbar{display:none}
+  .navlinks a{font-family:var(--font-display);font-weight:600;font-size:13px;color:var(--muted);text-decoration:none;padding:8px 11px;border-radius:999px;white-space:nowrap;transition:.15s}
+  .navlinks a:hover{color:var(--teal-deep);background:var(--mist)}
+
+  /* ---------- Cover ---------- */
+  .cover{background:radial-gradient(120% 90% at 82% -10%, rgba(255,178,76,.30), transparent 55%),radial-gradient(120% 120% at 0% 110%, rgba(15,178,166,.18), transparent 55%),var(--teal-deep);color:var(--sand);padding:74px 0 66px;position:relative;overflow:hidden}
+  .cover .wrap{position:relative;z-index:2}
+  .cover .eyebrow{color:var(--amber)}
+  .cover h1{font-size:clamp(38px,7vw,74px);font-weight:800;letter-spacing:-.02em;color:var(--white);margin:.35em 0 .3em}
+  .cover h1 em{font-style:normal;color:var(--teal);}
+  .cover .sub{font-size:clamp(17px,2.4vw,21px);color:#CFE7E2;max-width:640px}
+  .cover .metastrip{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+  .cover .metastrip span{font-family:var(--font-display);font-size:13px;font-weight:600;color:var(--sand);background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);padding:8px 14px;border-radius:999px}
+  .coverlogo{position:absolute;right:-40px;top:50%;transform:translateY(-50%);width:min(46%,460px);opacity:.9;z-index:1}
+  .doc-tag{display:inline-block;font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--teal-deep);background:var(--amber);padding:6px 14px;border-radius:999px}
+
+  /* ---------- Sections ---------- */
+  section{padding:64px 0}
+  .kicker{font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--coral);display:flex;align-items:center;gap:10px;margin-bottom:14px}
+  .kicker .num{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:8px;background:var(--teal-deep);color:var(--amber);font-size:12px}
+  h2.sec{font-size:clamp(26px,4vw,40px);font-weight:800;letter-spacing:-.02em;color:var(--teal-deep);max-width:16ch}
+  .sec-intro{font-size:18px;color:var(--muted);max-width:70ch;margin-top:14px}
+  .divider{height:1px;background:var(--line);border:0;margin:0}
+  .alt{background:linear-gradient(180deg,#fff, #FCFAF5)}
+  .grid{display:grid;gap:18px}
+  .g2{grid-template-columns:repeat(2,1fr)} .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(4,1fr)}
+  @media(max-width:860px){.g2,.g3,.g4{grid-template-columns:1fr}}
+
+  .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow-sm)}
+  .card h3{font-size:19px;color:var(--teal-deep);margin-bottom:8px}
+  .card p{color:var(--muted);margin:0}
+  .card .ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--mist);margin-bottom:14px}
+  .card .ic svg{width:24px;height:24px}
+
+  .pill{display:inline-block;font-family:var(--font-display);font-weight:600;font-size:12.5px;padding:5px 12px;border-radius:999px;background:var(--mist);color:var(--teal-deep)}
+  .pill.coral{background:#FFE4DF;color:#C1372A}.pill.amber{background:#FFEFD4;color:#9A6412}.pill.teal{background:var(--teal-deep);color:#fff}
+
+  /* two-column split */
+  .split{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
+  @media(max-width:860px){.split{grid-template-columns:1fr}}
+
+  /* do / dont */
+  .dd{border-radius:var(--radius);padding:22px;border:1px solid var(--line)}
+  .dd.do{background:#EAF7F3;border-color:#C7E9E0}
+  .dd.dont{background:#FDECE9;border-color:#F6CFC8}
+  .dd h4{font-size:15px;display:flex;align-items:center;gap:8px;margin-bottom:10px}
+  .dd.do h4{color:#0B6B5C}.dd.dont h4{color:#B23A2B}
+  .dd ul{margin:0;padding-left:18px;color:var(--muted);font-size:14.5px}
+  .dd li{margin-bottom:6px}
+
+  /* palette */
+  .swatches{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  @media(max-width:860px){.swatches{grid-template-columns:repeat(2,1fr)}}
+  .sw{border-radius:var(--radius-sm);overflow:hidden;border:1px solid var(--line);background:#fff}
+  .sw .chip{height:96px}
+  .sw .meta{padding:12px 14px}
+  .sw .nm{font-family:var(--font-display);font-weight:700;font-size:14px;color:var(--teal-deep)}
+  .sw .hex{font-family:var(--font-display);font-size:12.5px;color:var(--muted);letter-spacing:.5px}
+  .sw .use{font-size:12px;color:var(--muted);margin-top:4px;display:block}
+
+  /* type specimen */
+  .specimen{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow-sm)}
+  .specimen .big{font-family:var(--font-display);font-weight:800;font-size:clamp(34px,6vw,58px);color:var(--teal-deep);line-height:1;letter-spacing:-.02em}
+  .specimen .row{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:14px;font-family:var(--font-display);color:var(--muted)}
+  .specimen .row b{color:var(--teal-deep)}
+
+  /* logo boards */
+  .board{border-radius:var(--radius);border:1px solid var(--line);padding:30px;display:grid;place-items:center;min-height:150px}
+  .board.light{background:var(--sand)} .board.white{background:#fff}
+  .board.dark{background:var(--teal-deep);border-color:var(--line-dark)}
+  .board.teal{background:var(--teal)}
+  .board small{position:absolute}
+  .boardwrap{position:relative}
+  .boardwrap>.lbl{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);font-family:var(--font-display);font-weight:700;margin-bottom:8px;display:block}
+
+  /* concept cards for logo paths */
+  .concept{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;gap:14px}
+  .concept .art{background:var(--sand);border-radius:var(--radius-sm);height:150px;display:grid;place-items:center}
+  .concept.win{border:2px solid var(--teal);box-shadow:0 18px 40px -20px rgba(15,178,166,.5)}
+  .concept .tag{align-self:flex-start}
+
+  /* wireframe blocks */
+  .wf{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);overflow:hidden}
+  .wf .wfhead{display:flex;align-items:center;gap:10px;padding:10px 16px;background:var(--teal-deep);color:#CFE7E2}
+  .wf .wfhead .dot{width:10px;height:10px;border-radius:50%;background:var(--coral)}
+  .wf .wfhead .dot:nth-child(2){background:var(--amber)}.wf .wfhead .dot:nth-child(3){background:var(--teal)}
+  .wf .wfhead .u{margin-left:10px;font-family:var(--font-display);font-size:12px;background:rgba(255,255,255,.1);padding:3px 10px;border-radius:999px}
+  .wfblock{padding:20px 22px;border-bottom:1px dashed var(--line)}
+  .wfblock:last-child{border-bottom:0}
+  .wfblock .tagrow{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap}
+  .wfblock .name{font-family:var(--font-display);font-weight:700;font-size:13px;color:var(--coral);letter-spacing:1px;text-transform:uppercase}
+  .wfblock h4{font-size:18px;color:var(--teal-deep);margin:2px 0 6px}
+  .wfblock p{color:var(--muted);margin:0 0 .5em;font-size:14.5px}
+  .copybox{background:var(--sand);border-left:3px solid var(--amber);border-radius:8px;padding:12px 14px;margin-top:10px;font-size:14px}
+  .copybox .lab{font-family:var(--font-display);font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:4px}
+  .mini{font-size:13px;color:var(--muted)}
+
+  /* buttons demo */
+  .btn{font-family:var(--font-display);font-weight:700;font-size:15px;border:0;border-radius:999px;padding:14px 24px;cursor:pointer;display:inline-flex;align-items:center;gap:9px;text-decoration:none}
+  .btn.primary{background:var(--coral);color:#fff}
+  .btn.dark{background:var(--teal-deep);color:#fff}
+  .btn.ghost{background:transparent;color:var(--teal-deep);border:2px solid var(--teal-deep)}
+  .btn.amber{background:var(--amber);color:var(--teal-deep)}
+
+  /* table */
+  .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm)}
+  table.benefits{border-collapse:collapse;width:100%;min-width:640px;background:#fff}
+  table.benefits th,table.benefits td{padding:13px 14px;text-align:center;border-bottom:1px solid var(--line);font-size:13.5px}
+  table.benefits thead th{background:var(--teal-deep);color:#fff;font-family:var(--font-display);font-size:13px}
+  table.benefits thead th.master{background:var(--coral)}
+  table.benefits tbody td:first-child,table.benefits tbody th:first-child{text-align:left;font-weight:600;color:var(--teal-deep);font-family:var(--font-text)}
+  table.benefits tbody tr:nth-child(even){background:#FCFAF5}
+  table.benefits .yes{color:var(--teal);font-weight:800}
+  table.benefits .no{color:#C9C2B4}
+
+  /* tier cards */
+  .tier{border-radius:var(--radius);padding:24px;border:1px solid var(--line);background:#fff;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;gap:8px}
+  .tier .crown{font-family:var(--font-display);font-weight:800;font-size:19px}
+  .tier .lvl{font-size:12px;letter-spacing:2px;text-transform:uppercase;font-family:var(--font-display);font-weight:700;color:var(--muted)}
+  .tier.master{background:linear-gradient(180deg,#0B3B38,#0E4A45);color:#fff;border:0}
+  .tier.master .crown{color:var(--amber)} .tier.master .lvl{color:var(--teal)} .tier.master p{color:#CFE7E2}
+  .tier ul{margin:6px 0 0;padding-left:18px;color:var(--muted);font-size:14px}
+  .tier.master ul{color:#CFE7E2}
+  .tier li{margin-bottom:5px}
+
+  /* faq */
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);padding:4px 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-family:var(--font-display);font-weight:600;color:var(--teal-deep);padding:14px 0;list-style:none;display:flex;justify-content:space-between;gap:12px}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";color:var(--coral);font-weight:800}
+  .faq details[open] summary::after{content:"–"}
+  .faq details p{color:var(--muted);padding-bottom:14px;margin:0;font-size:14.5px}
+
+  /* quick info bar demo */
+  .qbar{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+  @media(max-width:860px){.qbar{grid-template-columns:repeat(2,1fr)}}
+  .qbar .cell{background:#fff;padding:16px;text-align:center}
+  .qbar .k{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);font-family:var(--font-display);font-weight:700}
+  .qbar .v{font-family:var(--font-display);font-weight:800;color:var(--teal-deep);font-size:16px;margin-top:4px}
+
+  /* component chips list */
+  .complist{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  @media(max-width:860px){.complist{grid-template-columns:1fr}}
+  .comp{background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);padding:16px 18px}
+  .comp b{font-family:var(--font-display);color:var(--teal-deep);font-size:14.5px}
+  .comp span{display:block;color:var(--muted);font-size:13px;margin-top:3px}
+
+  .note{background:var(--mist);border:1px solid #C7E9E0;border-radius:var(--radius-sm);padding:14px 18px;font-size:14px;color:#0B6B5C}
+  .callout{background:var(--teal-deep);color:#CFE7E2;border-radius:var(--radius);padding:34px;text-align:center}
+  .callout h3{color:#fff;font-size:clamp(22px,3.4vw,30px);margin-bottom:10px}
+  .callout .btn{margin-top:8px}
+
+  ul.clean{list-style:none;padding:0;margin:0}
+  ul.clean li{position:relative;padding-left:26px;margin-bottom:10px;color:var(--muted)}
+  ul.clean li::before{content:"";position:absolute;left:0;top:9px;width:12px;height:12px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 4px var(--mist)}
+  ul.clean li b{color:var(--graphite)}
+
+  footer.docfoot{background:var(--teal-deep);color:#9FC4BE;padding:40px 0;font-size:13.5px}
+  footer.docfoot .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+  footer.docfoot b{color:#fff;font-family:var(--font-display)}
+  .tick{color:var(--teal)}
+</style>
 </head>
 <body>
 
-<!-- =====================================================================
-     CONFIG RÁPIDA — troque os campos [[...]] (veja COMO-EDITAR.md)
-     [[WHATSAPP]] · [[EMAIL]] · [[LINK_PDF_MEDIAKIT]]
-====================================================================== -->
-
-<!-- ============ HEADER ============ -->
-<header class="site-header" id="header">
-  <div class="container nav">
-    <a class="brand" href="index.html" aria-label="1ª Corrida da Ternura — início">
-      <img src="assets/logo-simbolo.svg" alt="" width="36" height="36" aria-hidden="true">
-      <span>Corrida da Ternura</span>
-    </a>
-    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-    </button>
-    <nav class="nav-links" id="navLinks" aria-label="Navegação do media kit">
-      <a href="#porque">Por que patrocinar</a>
-      <a href="#publico">Público</a>
-      <a href="#cotas">Cotas</a>
-      <a href="#beneficios">Benefícios</a>
-      <a href="index.html">Ver a corrida</a>
-      <a class="btn btn--amber btn--sm nav-cta" href="[[WHATSAPP]]">Falar com a comissão</a>
+<!-- ============ TOP NAV ============ -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="brandmini">
+      <img src="logo-corrida-da-ternura-simbolo.svg" alt="" aria-hidden="true">
+      Corrida da Ternura
+    </div>
+    <nav class="navlinks">
+      <a href="#diagnostico">Diagnóstico</a>
+      <a href="#naming">Naming</a>
+      <a href="#identidade">Identidade</a>
+      <a href="#logo">Logo</a>
+      <a href="#landing">Landing</a>
+      <a href="#mediakit">Media Kit</a>
+      <a href="#arquitetura">Arquitetura</a>
+      <a href="#layout">Layout</a>
+      <a href="#componentes">Componentes</a>
+      <a href="#tecnico">Técnico</a>
     </nav>
+  </div>
+</div>
+
+<!-- ============ COVER ============ -->
+<header class="cover">
+  <img class="coverlogo" src="logo-corrida-da-ternura-simbolo.svg" alt="" aria-hidden="true">
+  <div class="wrap">
+    <span class="doc-tag">Brandbook &amp; Direção Criativa · Fase 1</span>
+    <h1>1ª Corrida <em>da Ternura</em></h1>
+    <p class="sub">Diagnóstico, identidade visual, logo e a estrutura completa das duas páginas — landing pública e media kit de patrocínio. Uma proposta original, esportiva e humana.</p>
+    <div class="metastrip">
+      <span>📅 15 de novembro de 2026</span>
+      <span>🕢 07h30</span>
+      <span>📍 Santuário da Divina e Trina Ternura — BR-277, Guarapuava/PR</span>
+      <span>🏃 5km · 10km · Caminhada · Kids</span>
+      <span>👥 500–600 atletas</span>
+    </div>
   </div>
 </header>
 
-<main id="topo">
+<main>
+<!-- ============ 01 DIAGNÓSTICO ============ -->
+<section id="diagnostico">
+  <div class="wrap">
+    <div class="kicker"><span class="num">01</span> Diagnóstico Criativo</div>
+    <h2 class="sec">Esporte com alma: performance e afeto correndo juntos</h2>
+    <p class="sec-intro">A 1ª Corrida da Ternura nasce de um cruzamento raro: a energia de uma corrida de rua moderna e o acolhimento de um encontro de comunidade, com o Santuário como cenário e âncora de sentido. O posicionamento explora exatamente essa soma — sem pender para o lado puramente competitivo (frio) nem para o lado exclusivamente religioso (litúrgico).</p>
 
-  <!-- ============ HERO ============ -->
-  <section class="hero hero--kit">
-    <img class="hero__symbol" src="assets/logo-simbolo.svg" alt="" aria-hidden="true">
-    <div class="container hero__inner">
-      <span class="hero__eyebrow">Media Kit · Cotas de patrocínio</span>
-      <h1>Seja patrocinador da <em>1ª Corrida da Ternura.</em></h1>
-      <p class="hero__sub">Associe sua marca a um evento esportivo, familiar e comunitário com 500 a 600 atletas e forte presença regional em Guarapuava. Uma edição inaugural — com espaço para marcas fundadoras.</p>
-      <div class="hero__actions">
-        <a class="btn btn--amber" href="#cotas">Ver as cotas</a>
-        <a class="btn btn--ghost-light" href="[[WHATSAPP]]">Falar com a comissão</a>
+    <div class="callout" style="text-align:left;margin:30px 0">
+      <div class="pill amber" style="margin-bottom:12px">Posicionamento</div>
+      <h3 style="max-width:24ch">“A corrida que começa no coração.”</h3>
+      <p style="max-width:65ch;margin:0">Um evento esportivo de rua, familiar e comunitário, sediado no Santuário da Divina e Trina Ternura, em Guarapuava. Une o rigor de uma prova bem organizada (5km, 10km, cronometragem, medalha) ao calor de um encontro que recebe famílias, crianças e iniciantes. A ternura é o diferencial de marca; o esporte é a linguagem; o Santuário é o senso de lugar.</p>
+    </div>
+
+    <div style="margin:22px 0 8px" class="mini"><b style="color:var(--teal-deep);font-family:var(--font-display)">Tom do evento</b></div>
+    <div style="display:flex;flex-wrap:wrap;gap:9px;margin-bottom:34px">
+      <span class="pill teal">Esportivo</span><span class="pill">Humano</span><span class="pill">Familiar</span>
+      <span class="pill coral">Acolhedor</span><span class="pill">Comunitário</span><span class="pill amber">Conexão sutil com o Santuário</span>
+    </div>
+
+    <div class="grid g2">
+      <div class="dd do">
+        <h4>✓ O que a corrida É</h4>
+        <ul>
+          <li>Moderna, bem organizada e com cara de evento esportivo real.</li>
+          <li>Inclusiva: acolhe do corredor de 10km à criança na prova kids.</li>
+          <li>Familiar e comunitária — feita para reunir gente, não só cronometrar tempos.</li>
+          <li>Com senso de lugar: natureza, amanhecer e o Santuário ao fundo.</li>
+          <li>Inaugural: a chance de “fazer parte da primeira”.</li>
+        </ul>
+      </div>
+      <div class="dd dont">
+        <h4>✕ O que a corrida NÃO é</h4>
+        <ul>
+          <li>Uma peça religiosa: nada de linguagem litúrgica ou símbolos sacros pesados.</li>
+          <li>Infantilizada ou caricata, mesmo tendo prova kids.</li>
+          <li>Amadora — sem visual improvisado, fontes soltas ou degradês berrantes.</li>
+          <li>Elitista: não fala só com atletas avançados.</li>
+          <li>Genérica: não parece “qualquer corrida” de banco de imagens.</li>
+        </ul>
       </div>
     </div>
-  </section>
 
-  <!-- ============ APRESENTAÇÃO / NÚMEROS ============ -->
-  <div class="container">
-    <div class="quickbar quickbar--lift reveal">
-      <div class="cell"><div class="k">Atletas</div><div class="v">500–600</div></div>
-      <div class="cell"><div class="k">No local*</div><div class="v">~1.500–2.000</div></div>
-      <div class="cell"><div class="k">Modalidades</div><div class="v">4</div></div>
-      <div class="cell"><div class="k">Praça</div><div class="v">Guarapuava +</div></div>
-      <div class="cell"><div class="k">Edição</div><div class="v">1ª · inaugural</div></div>
+    <h3 style="font-size:20px;color:var(--teal-deep);margin:40px 0 6px">Para quem falamos</h3>
+    <p class="mini" style="margin-bottom:18px">Dois públicos, uma marca — participantes (landing) e patrocinadores (media kit).</p>
+    <div class="grid g4">
+      <div class="card"><h3>Corredores</h3><p>Amadores e intermediários buscando 5km e 10km bem cronometrados e medalha de finisher.</p></div>
+      <div class="card"><h3>Famílias &amp; iniciantes</h3><p>Quem vai de caminhada, faz a primeira corrida ou leva as crianças para a prova kids.</p></div>
+      <div class="card"><h3>Comunidade local</h3><p>Guarapuava e região, assessorias esportivas, grupos de corrida e devotos do Santuário.</p></div>
+      <div class="card"><h3>Marcas &amp; apoiadores</h3><p>Empresas locais/regionais que querem associação a saúde, família e comunidade.</p></div>
+    </div>
+
+    <h3 style="font-size:20px;color:var(--teal-deep);margin:40px 0 6px">Pilares da marca</h3>
+    <div class="grid g4">
+      <div class="card"><div class="pill teal">01</div><h3 style="margin-top:12px">Movimento</h3><p>Esporte, ritmo e superação leve — sem competitividade agressiva.</p></div>
+      <div class="card"><div class="pill coral">02</div><h3 style="margin-top:12px">Ternura</h3><p>Afeto, cuidado e acolhimento como assinatura emocional do evento.</p></div>
+      <div class="card"><div class="pill amber">03</div><h3 style="margin-top:12px">Comunidade</h3><p>Pertencimento, família e o orgulho de ser de Guarapuava.</p></div>
+      <div class="card"><div class="pill">04</div><h3 style="margin-top:12px">Amanhecer</h3><p>A largada às 07h30, a luz e o recomeço — o aceno sutil ao Santuário.</p></div>
     </div>
   </div>
+</section>
+<hr class="divider">
+<!-- ============ 02 NAMING ============ -->
+<section id="naming" class="alt">
+  <div class="wrap">
+    <div class="kicker"><span class="num">02</span> Naming &amp; Conceito</div>
+    <h2 class="sec">O nome já é forte — a recomendação é mantê-lo</h2>
+    <p class="sec-intro">“1ª Corrida da Ternura” é distintivo, emocional e apropriável. “Ternura” é uma palavra rara no universo esportivo: cria memória, carrega afeto e conecta ao Santuário da Divina e Trina Ternura de forma elegante, sem precisar de nenhum símbolo religioso. O “1ª” adiciona ineditismo e urgência (“faça parte da primeira”).</p>
 
-  <section class="section">
-    <div class="container" style="max-width:820px">
-      <span class="kicker reveal">O evento</span>
-      <h2 class="section-title reveal">Um evento de imagem positiva, perto das pessoas</h2>
-      <p class="lead reveal">A Corrida da Ternura é um evento de corrida e caminhada realizado no Santuário da Divina e Trina Ternura, em Guarapuava/PR, com largada em 15 de novembro de 2026.</p>
-      <p style="color:var(--muted)" class="reveal">São quatro modalidades — 5km, 10km, caminhada e corrida kids — pensadas para reunir atletas, famílias e comunidade em uma única manhã. Um evento saudável e agregador, ideal para marcas que querem estar próximas do público e associadas a valores fortes.</p>
-      <p style="font-size:13px;color:var(--muted)">*Considerando atletas e acompanhantes/famílias. Alcance digital (redes e site) consolidado ao longo da campanha.</p>
-    </div>
-  </section>
-
-  <!-- ============ PARCERIA / REALIZAÇÃO (Santuário) ============ -->
-  <section class="section--tight">
-    <div class="container">
-      <div class="partner reveal">
-        <img class="partner__logo" src="assets/img/santuario.png" alt="Santuário da Divina e Trina Ternura">
-        <p class="partner__txt"><span class="partner__eyebrow">Realização</span>Um evento do <b>Santuário da Divina e Trina Ternura</b>, em Guarapuava/PR — credibilidade institucional e vínculo direto com a comunidade local.</p>
+    <div class="split" style="margin-top:26px">
+      <div class="card">
+        <h3>Veredito: manter como nome oficial</h3>
+        <p style="margin-bottom:14px">Recomendo <b>“1ª Corrida da Ternura”</b> como assinatura oficial. O único “risco” — a palavra ternura soar pouco esportiva — é resolvido pelo sistema visual vibrante e pelo movimento embutido na logo (o rastro e o coração-percurso). O nome vira exatamente o que diferencia o evento de qualquer outra corrida.</p>
+        <ul class="clean">
+          <li><b>Memorável &amp; único</b> — ninguém mais “é dono” de ternura no esporte.</li>
+          <li><b>Conexão institucional</b> — herda o nome do Santuário sem copiá-lo.</li>
+          <li><b>Escalável</b> — “Corrida da Ternura” vira marca-mãe para as próximas edições.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="card" style="margin-bottom:16px">
+          <h3 style="font-size:16px">Variações de apoio</h3>
+          <p class="mini" style="margin-bottom:10px">Para campanha, redes e contextos específicos — nunca substituindo o nome oficial.</p>
+          <span class="pill">Corrida da Ternura <span style="opacity:.6">(marca-mãe)</span></span>
+          <span class="pill" style="margin:6px 4px">Corrida e Caminhada da Ternura <span style="opacity:.6">(editais)</span></span>
+          <span class="pill">Circuito da Ternura <span style="opacity:.6">(futura série)</span></span>
+        </div>
+        <div class="card">
+          <h3 style="font-size:16px">Slogan / frase-conceito</h3>
+          <p style="font-family:var(--font-display);font-weight:800;color:var(--coral);font-size:22px;margin:6px 0 4px">“Corra com o coração.”</p>
+          <p class="mini" style="margin-bottom:10px">Duplo sentido: o coração da emoção (ternura) e o coração do esforço (esporte).</p>
+          <p class="mini" style="margin:0"><b style="color:var(--teal-deep)">Alternativas:</b> “Cada passo, um gesto de ternura.” · “Movidos pela ternura.” · “Um passo de cada vez, com o coração.”</p>
+        </div>
       </div>
     </div>
-  </section>
 
-  <!-- ============ POR QUE PATROCINAR ============ -->
-  <section class="section section--alt" id="porque">
-    <div class="container">
-      <div class="reveal" style="margin-bottom:38px">
-        <span class="kicker">Por que patrocinar</span>
-        <h2 class="section-title">Seis razões para estar na estreia</h2>
+    <div class="note" style="margin-top:22px"><b>Big idea:</b> a primeira corrida onde <b>performance e afeto correm juntos</b>. Tudo — do tom dos textos à direção de fotografia — reforça que dá para ser bem organizado e caloroso ao mesmo tempo.</div>
+  </div>
+</section>
+<hr class="divider">
+<!-- ============ 03 IDENTIDADE ============ -->
+<section id="identidade">
+  <div class="wrap">
+    <div class="kicker"><span class="num">03</span> Identidade Visual</div>
+    <h2 class="sec">Direção estética: “esportivo caloroso”</h2>
+    <p class="sec-intro">Uma linguagem geométrica, limpa e vibrante — turquesa energético equilibrado por coral e âmbar quentes, tipografia moderna e muito respiro em tom areia. O resultado é confiante e contemporâneo como um evento esportivo de verdade, mas humano e acolhedor como o nome pede. Nunca clínico, nunca infantil, nunca litúrgico.</p>
+
+    <!-- Paleta -->
+    <h3 style="font-size:20px;color:var(--teal-deep);margin:34px 0 4px">Paleta de cores</h3>
+    <p class="mini" style="margin-bottom:18px">Turquesa como cor de marca; coral e âmbar como calor (ternura + amanhecer); verde profundo para dar peso e permitir o modo escuro; areia para o respiro.</p>
+    <div class="swatches">
+      <div class="sw"><div class="chip" style="background:#0FB2A6"></div><div class="meta"><div class="nm">Turquesa Trilha</div><div class="hex">#0FB2A6</div><span class="use">Cor de marca · grafismos · ícones</span></div></div>
+      <div class="sw"><div class="chip" style="background:#0B3B38"></div><div class="meta"><div class="nm">Verde Profundo</div><div class="hex">#0B3B38</div><span class="use">Texto forte · fundo escuro</span></div></div>
+      <div class="sw"><div class="chip" style="background:#FF6A5A"></div><div class="meta"><div class="nm">Coral Ternura</div><div class="hex">#FF6A5A</div><span class="use">CTA · destaques quentes</span></div></div>
+      <div class="sw"><div class="chip" style="background:#FFB24C"></div><div class="meta"><div class="nm">Âmbar Alvorada</div><div class="hex">#FFB24C</div><span class="use">Medalha · destaque · 07h30</span></div></div>
+      <div class="sw"><div class="chip" style="background:#FBF6EE;box-shadow:inset 0 0 0 1px #E7E0D4"></div><div class="meta"><div class="nm">Areia Clara</div><div class="hex">#FBF6EE</div><span class="use">Fundo claro (quente)</span></div></div>
+      <div class="sw"><div class="chip" style="background:#DBF1EC"></div><div class="meta"><div class="nm">Névoa Turquesa</div><div class="hex">#DBF1EC</div><span class="use">Cards · fundos suaves</span></div></div>
+      <div class="sw"><div class="chip" style="background:#1E2A29"></div><div class="meta"><div class="nm">Grafite</div><div class="hex">#1E2A29</div><span class="use">Texto corrido</span></div></div>
+      <div class="sw"><div class="chip" style="background:#FFFFFF;box-shadow:inset 0 0 0 1px #E7E0D4"></div><div class="meta"><div class="nm">Branco</div><div class="hex">#FFFFFF</div><span class="use">Base · cards</span></div></div>
+    </div>
+    <div class="note" style="margin-top:16px"><b>Contraste &amp; acessibilidade:</b> texto sempre em Grafite ou Verde Profundo sobre Areia/Branco (AA/AAA). Botão primário = Coral com texto branco em peso ≥16px bold; para texto pequeno, usar Verde Profundo como fundo. Turquesa é cor de área gráfica — evite texto pequeno turquesa sobre branco.</div>
+
+    <!-- Tipografia -->
+    <h3 style="font-size:20px;color:var(--teal-deep);margin:40px 0 4px">Tipografia <span class="pill amber" style="vertical-align:middle">Google Fonts · gratuitas</span></h3>
+    <div class="grid g2" style="margin-top:16px">
+      <div class="specimen">
+        <div class="big" style="font-weight:800">Sora</div>
+        <p class="mini" style="margin:10px 0 0"><b style="color:var(--teal-deep)">Títulos &amp; display.</b> Geométrica moderna com leve calor — dá energia esportiva sem endurecer. Pesos 600 / 700 / 800 para manchetes, números e distâncias (5K, 10K, 07h30).</p>
+        <div class="row"><span>400</span><span>500</span><span><b>600</b></span><span><b>700</b></span><span><b>800</b></span></div>
       </div>
-      <div class="grid cols-3">
-        <div class="why reveal"><b>Público qualificado</b><span>Pessoas que investem em saúde, bem-estar e família.</span></div>
-        <div class="why reveal"><b>Valores positivos</b><span>Sua marca ligada a esporte, comunidade e afeto.</span></div>
-        <div class="why reveal"><b>Marca fundadora</b><span>Ineditismo: estar na 1ª edição tem valor histórico.</span></div>
-        <div class="why reveal"><b>Exposição multicanal</b><span>Evento presencial + redes sociais + site + impressos.</span></div>
-        <div class="why reveal"><b>Relacionamento real</b><span>Contato presencial com o público na arena do evento.</span></div>
-        <div class="why reveal"><b>Credibilidade</b><span>Vínculo com o Santuário e com a comunidade local.</span></div>
+      <div class="specimen">
+        <div class="big" style="font-family:var(--font-text);font-weight:700">Inter</div>
+        <p class="mini" style="margin:10px 0 0"><b style="color:var(--teal-deep)">Texto &amp; interface.</b> Legibilidade impecável em tela para parágrafos, FAQ, tabelas e formulários de inscrição. Pesos 400 / 500 / 600.</p>
+        <div class="row"><span style="font-family:var(--font-text)">400</span><span style="font-family:var(--font-text);font-weight:500">500</span><span style="font-family:var(--font-text);font-weight:600"><b>600</b></span><span style="font-family:var(--font-text);font-weight:700"><b>700</b></span></div>
       </div>
     </div>
-  </section>
+    <p class="mini" style="margin-top:12px"><b style="color:var(--teal-deep)">Alternativas equivalentes:</b> display → Space Grotesk; texto → DM Sans. <b style="color:var(--teal-deep)">Evitar:</b> manuscritas “fofas”, comic e fontes de forte personalidade que datam rápido.</p>
 
-  <!-- ============ EXPOSIÇÃO DE MARCA ============ -->
-  <section class="section" id="publico">
-    <div class="container">
-      <div class="reveal" style="margin-bottom:34px">
-        <span class="kicker">Potencial de exposição</span>
-        <h2 class="section-title">Onde a sua marca aparece</h2>
-        <p class="lead">Antes, durante e depois do evento — no corpo do atleta, na arena e nas telas.</p>
+    <!-- Grafismos & Ícones -->
+    <div class="grid g2" style="margin-top:40px">
+      <div>
+        <h3 style="font-size:20px;color:var(--teal-deep);margin:0 0 8px">Grafismos de apoio</h3>
+        <ul class="clean">
+          <li><b>Linha-percurso:</b> a mesma linha arredondada da logo vira divisórias, sublinhados e traçado de mapa, com marcadores de km.</li>
+          <li><b>Coração-trilha (marca d’água):</b> o símbolo ampliado, baixa opacidade, atrás de heros e seções.</li>
+          <li><b>Raios de alvorada:</b> gradiente radial âmbar→transparente sugerindo nascer do sol.</li>
+          <li><b>Curvas de nível:</b> linhas topográficas sutis como textura (natureza / mapa da BR-277).</li>
+          <li><b>Cantos arredondados</b> (cards 16–20px) e <b>botões pill</b> para reforçar o gesto acolhedor.</li>
+        </ul>
       </div>
-      <div class="grid cols-4">
-        <div class="card card--flat reveal"><h3 style="font-size:17px">Camiseta oficial</h3><p>Vestida por 500–600 atletas dentro e fora do evento.</p></div>
-        <div class="card card--flat reveal"><h3 style="font-size:17px">Número de peito</h3><p>Presente em praticamente todas as fotos de prova.</p></div>
-        <div class="card card--flat reveal"><h3 style="font-size:17px">Arco de largada/chegada</h3><p>O ponto mais fotografado e filmado do evento.</p></div>
-        <div class="card card--flat reveal"><h3 style="font-size:17px">Banners no percurso</h3><p>Exposição ao longo do trajeto e na arena.</p></div>
-        <div class="card card--flat reveal"><h3 style="font-size:17px">Kit do atleta</h3><p>Brinde ou material inserido no kit de cada inscrito.</p></div>
-        <div class="card card--flat reveal"><h3 style="font-size:17px">Redes &amp; site</h3><p>Posts, stories e presença na página oficial.</p></div>
-        <div class="card card--flat reveal"><h3 style="font-size:17px">Locução no palco</h3><p>Citação da marca na largada e na premiação.</p></div>
-        <div class="card card--flat reveal"><h3 style="font-size:17px">Ativação na arena</h3><p>Estande, sampling, hidratação e ações com o público.</p></div>
+      <div>
+        <h3 style="font-size:20px;color:var(--teal-deep);margin:0 0 8px">Estilo de ícones</h3>
+        <p class="mini" style="margin-bottom:14px">Lineares, traço 2px, pontas arredondadas — mesma “caligrafia” da logo. Cor turquesa ou grafite; coral no estado ativo. Nada de ícones religiosos literais.</p>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow-sm)">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0B3B38" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0B3B38" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.2-7-10a7 7 0 0 1 14 0c0 4.8-7 10-7 10Z"/><circle cx="12" cy="11" r="2.5"/></svg>
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0B3B38" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3l2 5M16 3l-2 5"/><circle cx="12" cy="15" r="6"/><path d="M12 12.5l1 2 2 .2-1.5 1.5.4 2-1.9-1-1.9 1 .4-2L9 14.7l2-.2Z"/></svg>
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0B3B38" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4l-5 3 2 3 3-1v8h6v-8l3 1 2-3-5-3a3 3 0 0 1-6 0Z"/></svg>
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0B3B38" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s5 5.5 5 10a5 5 0 0 1-10 0c0-4.5 5-10 5-10Z"/></svg>
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#FF6A5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17c3-6 5-9 8-9s5 3 8 9"/><circle cx="7" cy="19" r="1.6"/><circle cx="17" cy="19" r="1.6"/></svg>
+        </div>
+        <p class="mini" style="margin-top:8px">Relógio · localização · medalha · camiseta · hidratação · percurso</p>
       </div>
     </div>
-  </section>
 
-  <!-- ============ COTAS ============ -->
-  <section class="section section--alt" id="cotas">
-    <div class="container">
-      <div class="reveal" style="margin-bottom:38px">
-        <span class="kicker">Cotas de patrocínio</span>
-        <h2 class="section-title">Cinco formas de participar</h2>
-        <p class="lead">Investimento por cota <b>sob consulta</b> — os valores são definidos com a comissão a partir da estrutura de custos e das metas da 1ª edição.</p>
+    <!-- Fotografia -->
+    <h3 style="font-size:20px;color:var(--teal-deep);margin:40px 0 8px">Estilo fotográfico</h3>
+    <div class="grid g3">
+      <div class="card"><h3>Emoção real</h3><p>Largada, high-fives, famílias, crianças correndo, chegada emocionada. Pessoas de verdade — diversidade de idades e corpos.</p></div>
+      <div class="card"><h3>Luz de amanhecer</h3><p>Luz natural quente (golden hour combina com a largada 07h30). Paisagem e Santuário ao fundo, sempre de forma sutil.</p></div>
+      <div class="card"><h3>Tratamento coeso</h3><p>Leve duotone turquesa/verde ou grade quente para unir foto e gráfico. Evitar banco de imagem corporativo e frio.</p></div>
+    </div>
+
+    <!-- Aplicações claro/escuro -->
+    <h3 style="font-size:20px;color:var(--teal-deep);margin:44px 0 8px">Aplicações em fundo claro e escuro</h3>
+    <div class="grid g2">
+      <div class="boardwrap"><span class="lbl">Fundo claro (areia) — versão cor</span>
+        <div class="board light"><img src="logo-corrida-da-ternura-principal.svg" alt="Logo horizontal em cor" style="width:100%;max-width:430px"></div>
+      </div>
+      <div class="boardwrap"><span class="lbl">Fundo escuro (verde profundo) — versão negativa</span>
+        <div class="board dark"><img src="logo-corrida-da-ternura-negativa.svg" alt="Logo negativa coral" style="width:100%;max-width:430px"></div>
+      </div>
+    </div>
+    <div class="grid g2" style="margin-top:16px">
+      <div class="boardwrap"><span class="lbl">Símbolo isolado</span>
+        <div class="board white"><img src="logo-corrida-da-ternura-simbolo.svg" alt="Símbolo da marca" style="width:128px"></div>
+      </div>
+      <div class="boardwrap"><span class="lbl">Versão vertical (empilhada)</span>
+        <div class="board light"><img src="logo-corrida-da-ternura-vertical.svg" alt="Logo vertical" style="width:100%;max-width:220px"></div>
+      </div>
+    </div>
+
+    <h3 style="font-size:20px;color:var(--teal-deep);margin:40px 0 4px">Versões negativas (cores da paleta)</h3>
+    <p class="mini" style="margin:0 0 14px">Além da coral, a marca em negativo funciona em branca, turquesa e verde profundo — escolha pela leitura no fundo. Arquivos <b>.svg</b> inclusos.</p>
+    <div class="grid g4">
+      <div class="boardwrap"><span class="lbl">Coral / fundo escuro</span><div class="board dark"><img src="logo-corrida-da-ternura-negativa.svg" alt="Negativa coral" style="width:100%;max-width:230px"></div></div>
+      <div class="boardwrap"><span class="lbl">Branca / fundo escuro</span><div class="board dark"><img src="logo-corrida-da-ternura-negativa-branca.svg" alt="Negativa branca" style="width:100%;max-width:230px"></div></div>
+      <div class="boardwrap"><span class="lbl">Turquesa / areia</span><div class="board light"><img src="logo-corrida-da-ternura-negativa-teal.svg" alt="Negativa turquesa" style="width:100%;max-width:230px"></div></div>
+      <div class="boardwrap"><span class="lbl">Verde / areia</span><div class="board light"><img src="logo-corrida-da-ternura-negativa-verde.svg" alt="Negativa verde profundo" style="width:100%;max-width:230px"></div></div>
+    </div>
+
+    <!-- Diretrizes -->
+    <h3 style="font-size:20px;color:var(--teal-deep);margin:44px 0 8px">Diretrizes: nem infantil, nem litúrgico</h3>
+    <div class="grid g2">
+      <div class="dd do">
+        <h4>✓ Faça</h4>
+        <ul>
+          <li>Geometria limpa, muito respiro e hierarquia clara.</li>
+          <li>Cores vibrantes equilibradas por tons quentes e areia.</li>
+          <li>O coração como gesto elegante e adulto — não “clip-art fofo”.</li>
+          <li>Referência ao Santuário via luz, amanhecer e serenidade.</li>
+          <li>Fotos reais, luminosas e emocionais.</li>
+        </ul>
+      </div>
+      <div class="dd dont">
+        <h4>✕ Evite</h4>
+        <ul>
+          <li>Cruzes, terços, pombas ou imagens sacras literais.</li>
+          <li>Tipografia manuscrita fofa, comic e mascotes infantis.</li>
+          <li>Arco-íris, corações clip-art e excesso de brilhos.</li>
+          <li>Saturar de cor sem hierarquia; degradês berrantes.</li>
+          <li>Clipart esportivo genérico e sombras duras (cara amadora).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<hr class="divider">
+<!-- ============ 04 LOGO ============ -->
+<section id="logo" class="alt">
+  <div class="wrap">
+    <div class="kicker"><span class="num">04</span> Logo do Evento</div>
+    <h2 class="sec">Três caminhos conceituais — e o mais forte escolhido</h2>
+    <p class="sec-intro">Todos foram pensados para funcionar em site, camiseta, medalha, número de peito, banner, redes e favicon, e para serem vetorizados sem depender de imagem. Abaixo, os três caminhos e a recomendação.</p>
+
+    <div class="grid g3" style="margin-top:26px">
+      <div class="concept">
+        <span class="pill tag teal">Caminho A</span>
+        <div class="art">
+          <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <rect x="18" y="18" width="84" height="84" rx="22" fill="none" stroke="#0B3B38" stroke-width="6"/>
+            <path d="M38 74 L60 44 L82 74" fill="none" stroke="#0FB2A6" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M40 88 L62 58 L84 88" fill="none" stroke="#FF6A5A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity=".85"/>
+          </svg>
+        </div>
+        <h3 style="font-size:17px;color:var(--teal-deep)">Esportivo e moderno</h3>
+        <p class="mini">Emblema estilo “race badge”: chevrons ascendentes (velocidade/superação) dentro de um selo. Forte e dinâmico. <b>Risco:</b> pode ficar frio e perder a ternura.</p>
+      </div>
+      <div class="concept">
+        <span class="pill tag coral">Caminho B</span>
+        <div class="art">
+          <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <path d="M60 92 C40 74 26 62 34 46 C40 34 54 36 60 48" fill="none" stroke="#0FB2A6" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M60 48 C66 36 80 34 86 46 C94 62 80 74 60 92" fill="none" stroke="#FF6A5A" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="60" cy="34" r="6.5" fill="#FFB24C"/>
+          </svg>
+        </div>
+        <h3 style="font-size:17px;color:var(--teal-deep)">Acolhedor e comunitário</h3>
+        <p class="mini">Coração formado por uma linha-percurso contínua; duas curvas que se “abraçam” (comunidade/família). Quente e memorável. <b>Risco:</b> se mal feito, vira clipart fofo.</p>
+      </div>
+      <div class="concept">
+        <span class="pill tag amber">Caminho C</span>
+        <div class="art">
+          <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30 78 A30 30 0 0 1 90 78" fill="none" stroke="#0B3B38" stroke-width="7" stroke-linecap="round"/>
+            <circle cx="60" cy="78" r="12" fill="#FFB24C"/>
+            <path d="M60 50 V40 M78 58 L85 51 M42 58 L35 51" stroke="#FF6A5A" stroke-width="6" stroke-linecap="round"/>
+            <path d="M22 90 H98" stroke="#0FB2A6" stroke-width="8" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 style="font-size:17px;color:var(--teal-deep)">Institucional / Santuário</h3>
+        <p class="mini">Amanhecer sobre um arco/horizonte (arquitetura do santuário, sem símbolo religioso); três raios acenam à “Trina” Ternura. Sereno e elegante. <b>Risco:</b> sóbrio demais.</p>
+      </div>
+    </div>
+
+    <!-- Winner -->
+    <div class="split" style="margin-top:44px;align-items:center">
+      <div class="concept win" style="align-items:center;text-align:center">
+        <span class="pill tag teal" style="align-self:center">✓ Versão final da marca</span>
+        <div class="art" style="height:210px;width:100%;padding:14px">
+          <img src="logo-corrida-da-ternura-simbolo.svg" alt="Símbolo da 1ª Corrida da Ternura" style="max-height:180px;width:auto">
+        </div>
+        <h3 style="font-size:18px;color:var(--teal-deep)">Coração-Abraço ao Amanhecer</h3>
+      </div>
+      <div>
+        <h3 style="font-size:22px;color:var(--teal-deep);margin-bottom:10px">A defesa do símbolo</h3>
+        <p>Um único gesto reúne os pilares da marca — e cada elemento tem função:</p>
+        <ul class="clean">
+          <li><b>O abraço (o vão em branco):</b> dentro do coração, o espaço negativo desenha um braço que acolhe. É a ternura em forma de gesto — cuidado, proximidade e pertencimento.</li>
+          <li><b>O coração (turquesa):</b> o abraço acontece dentro de um coração cheio e sólido — família, comunidade e afeto sustentando tudo.</li>
+          <li><b>O sol e o rastro (coral):</b> o sol nascente e o traço de movimento trazem a energia da corrida e o amanhecer da largada às 07h30 — um aceno sutil e respeitoso ao Santuário, sem nenhum símbolo religioso.</li>
+        </ul>
+        <div class="note" style="margin-top:6px">Os <b>três elementos</b> — coração, abraço e sol — acenam com delicadeza à “<b>Trina</b>” Ternura. O símbolo escala do favicon à medalha, funciona em versão negativa e tem gesto próprio e apropriável.</div>
+      </div>
+    </div>
+
+    <!-- Versions -->
+    <h3 style="font-size:20px;color:var(--teal-deep);margin:44px 0 8px">Versões do sistema</h3>
+    <div class="grid g3">
+      <div class="boardwrap"><span class="lbl">Vertical (empilhada)</span>
+        <div class="board white"><img src="logo-corrida-da-ternura-vertical.svg" alt="Logo vertical" style="width:100%;max-width:210px"></div>
+      </div>
+      <div class="boardwrap"><span class="lbl">Símbolo (isolado)</span>
+        <div class="board light"><img src="logo-corrida-da-ternura-simbolo.svg" alt="Símbolo da marca" style="width:120px"></div>
+      </div>
+      <div class="boardwrap"><span class="lbl">Negativa (fundo escuro)</span>
+        <div class="board dark"><img src="logo-corrida-da-ternura-negativa-vertical.svg" alt="Logo negativa vertical" style="width:100%;max-width:200px"></div>
+      </div>
+    </div>
+    <p class="mini" style="margin-top:10px">No favicon e em tamanhos ≤ 32px, priorize o <b>símbolo</b> (coração + sol). Área de proteção mínima = metade da altura do coração em todos os lados. Tamanho mínimo do símbolo: 24px.</p>
+
+    <div class="grid g4" style="margin-top:22px">
+      <div class="comp"><b>Camiseta</b><span>Símbolo grande nas costas + lockup pequeno no peito; 1 cor sobre o tecido.</span></div>
+      <div class="comp"><b>Medalha</b><span>Símbolo em relevo; sol coral como ponto de esmalte; ano no verso.</span></div>
+      <div class="comp"><b>Número de peito</b><span>Lockup no topo, faixa turquesa, número em Sora 800.</span></div>
+      <div class="comp"><b>Banner / arco</b><span>Versão invertida sobre verde profundo, coração-trilha como marca d’água.</span></div>
+    </div>
+
+    <div class="note" style="margin-top:18px"><b>Arquivos:</b> a versão final da logo é totalmente vetorial (coração, abraço em negativo, sol e rastro) e acompanha a entrega em <b>.svg</b> e <b>.pdf</b> editáveis — nas versões horizontal, vertical, símbolo e negativa.</div>
+  </div>
+</section>
+<hr class="divider">
+<!-- ============ 05 LANDING ============ -->
+<section id="landing">
+  <div class="wrap">
+    <div class="kicker"><span class="num">05</span> Landing Page Pública</div>
+    <h2 class="sec">A página do atleta — informar, dar credibilidade e converter inscrição</h2>
+    <p class="sec-intro">Estrutura completa, seção a seção, já com os textos em português do Brasil: linguagem clara, comercial e institucional, sem exagero. Abaixo, o mapa da página com a copy pronta para cada bloco.</p>
+
+    <div class="wf" style="margin-top:26px">
+      <div class="wfhead"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="u">corridadaternura.com.br<b style="color:#fff">/corrida-da-ternura</b></span></div>
+
+      <div class="wfblock">
+        <div class="tagrow"><span class="name">01 · Barra de topo</span><span class="pill">Fixa</span></div>
+        <p>Logo à esquerda; âncoras (A corrida · Modalidades · Percurso · Kit · FAQ); botão de inscrição sempre visível.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn primary" style="padding:10px 18px;font-size:13px">Inscreva-se</a><a class="btn ghost" style="padding:10px 18px;font-size:13px">Ver modalidades</a></div>
       </div>
 
-      <!-- Master destaque -->
-      <div class="tier tier--master reveal" style="margin-bottom:20px">
-        <span class="tier__ribbon">Cota única · exclusiva</span>
-        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;align-items:flex-end">
-          <div>
-            <span class="lvl">Naming rights</span>
-            <div class="name">Master</div>
-            <p style="max-width:60ch">A marca apresenta o evento: <b>“1ª Corrida da Ternura — apresentada por [sua marca]”.</b> Máxima exposição em todos os pontos, exclusividade de segmento e presença premium na arena.</p>
+      <div class="wfblock">
+        <div class="tagrow"><span class="name">02 · Hero principal</span><span class="pill coral">Foto: largada ao amanhecer (duotone)</span></div>
+        <h4>Título + subtítulo + chips de data/local + CTA duplo</h4>
+        <div class="copybox">
+          <span class="lab">H1</span>Corra com o coração.
+          <span class="lab" style="margin-top:8px">Subtítulo</span>A 1ª Corrida da Ternura reúne esporte, família e comunidade em uma manhã inesquecível no Santuário da Divina e Trina Ternura, em Guarapuava. 5km, 10km, caminhada e corrida kids.
+          <span class="lab" style="margin-top:8px">Chips</span>📅 15/11/2026 · 🕢 07h30 · 📍 Santuário da Divina e Trina Ternura — BR-277, Guarapuava/PR
+          <span class="lab" style="margin-top:8px">Botões</span>[ Garanta sua inscrição ] &nbsp; [ Ver modalidades ]
+        </div>
+      </div>
+
+      <div class="wfblock">
+        <div class="tagrow"><span class="name">03 · Barra de informações rápidas</span></div>
+        <div class="qbar">
+          <div class="cell"><div class="k">Data</div><div class="v">15 NOV 2026</div></div>
+          <div class="cell"><div class="k">Largada</div><div class="v">07h30</div></div>
+          <div class="cell"><div class="k">Local</div><div class="v">Santuário · BR-277</div></div>
+          <div class="cell"><div class="k">Modalidades</div><div class="v">5 · 10 · Cam · Kids</div></div>
+          <div class="cell"><div class="k">Vagas</div><div class="v">600 atletas</div></div>
+        </div>
+      </div>
+
+      <div class="wfblock">
+        <div class="tagrow"><span class="name">04 · Chamada de inscrição</span><span class="pill amber">Escassez real</span></div>
+        <div class="copybox"><span class="lab">Bloco de destaque</span><b>Vagas limitadas a 600 atletas.</b> As inscrições da 1ª edição são por tempo limitado — garanta a sua e faça parte da primeira Corrida da Ternura. <br><b style="color:var(--coral)">[ Quero me inscrever ]</b></div>
+      </div>
+
+      <div class="wfblock">
+        <div class="tagrow"><span class="name">05 · Sobre a corrida</span></div>
+        <div class="copybox"><span class="lab">Texto</span>Mais que uma prova, um encontro. A Corrida da Ternura nasce para reunir quem corre por esporte, quem caminha por saúde e quem vem em família aproveitar a manhã. O percurso parte do Santuário da Divina e Trina Ternura, às margens da BR-277, cercado pela paisagem de Guarapuava. É esporte bem organizado — com cronometragem, hidratação e medalha de finisher — no calor de um evento comunitário. Você define o ritmo; a gente cuida do resto.</div>
+      </div>
+
+      <div class="wfblock">
+        <div class="tagrow"><span class="name">06 · Para quem é</span><span class="pill">Cards</span></div>
+        <div class="grid g4" style="gap:12px">
+          <div class="comp"><b>Corredores</b><span>5km e 10km cronometrados.</span></div>
+          <div class="comp"><b>Famílias</b><span>Caminhada leve, no seu tempo.</span></div>
+          <div class="comp"><b>Crianças</b><span>Corrida kids, segura e divertida.</span></div>
+          <div class="comp"><b>Iniciantes</b><span>Sua primeira corrida começa aqui.</span></div>
+        </div>
+      </div>
+
+      <div class="wfblock">
+        <div class="tagrow"><span class="name">07 · Modalidades</span><span class="pill teal">Núcleo da página</span></div>
+        <div class="grid g4" style="gap:12px">
+          <div class="tier"><span class="lvl">Corrida</span><span class="crown" style="color:var(--teal-deep)">5 km</span><p style="color:var(--muted);font-size:13.5px;margin:0">Para quem está evoluindo ou quer um desafio acessível. Cronometrada, com medalha de finisher.</p></div>
+          <div class="tier"><span class="lvl">Corrida</span><span class="crown" style="color:var(--teal-deep)">10 km</span><p style="color:var(--muted);font-size:13.5px;margin:0">O desafio principal, para corredores intermediários. Cronometragem por chip e premiação por categoria.</p></div>
+          <div class="tier"><span class="lvl">Sem cronometragem</span><span class="crown" style="color:var(--teal-deep)">Caminhada</span><p style="color:var(--muted);font-size:13.5px;margin:0">Percurso leve para fazer em família ou com amigos, no seu ritmo. Todos recebem medalha.</p></div>
+          <div class="tier"><span class="lvl">3 a 12 anos</span><span class="crown" style="color:var(--teal-deep)">Kids</span><p style="color:var(--muted);font-size:13.5px;margin:0">Provas curtas por faixa etária, em área segura. Medalha para toda criança que cruzar a linha.</p></div>
+        </div>
+      </div>
+
+      <div class="wfblock">
+        <div class="tagrow"><span class="name">08 · Percurso / Mapa</span><span class="pill">Placeholder até o traçado oficial</span></div>
+        <div style="background:var(--mist);border:2px dashed #9CD3C8;border-radius:14px;height:150px;display:grid;place-items:center;color:#0B6B5C;font-family:var(--font-display);font-weight:600">🗺️ Mapa oficial do percurso — em breve</div>
+        <div class="copybox" style="margin-top:12px"><span class="lab">Texto de apoio</span>Largada e chegada no Santuário da Divina e Trina Ternura. Percurso predominantemente plano, com pontos de hidratação e apoio ao longo do trajeto. O mapa oficial, a altimetria e os pontos de hidratação serão divulgados aqui em breve.</div>
+      </div>
+
+      <div class="wfblock">
+        <div class="tagrow"><span class="name">09 · Kit do atleta</span><span class="pill amber">A confirmar</span></div>
+        <div class="copybox"><span class="lab">Texto</span>Todo inscrito recebe o kit oficial da 1ª Corrida da Ternura. A composição está sendo finalizada e prevê: camiseta oficial do evento, número de peito com chip de cronometragem, medalha de finisher e sacola com brindes dos patrocinadores. A composição completa e a tabela de tamanhos serão divulgadas em breve.</div>
+      </div>
+
+      <div class="wfblock">
+        <div class="tagrow"><span class="name">10 · Cronograma do dia</span><span class="pill">Previsto</span></div>
+        <ul class="clean" style="columns:2;column-gap:32px">
+          <li><b>06h30</b> — Abertura da arena e retirada de kits</li>
+          <li><b>07h15</b> — Aquecimento coletivo</li>
+          <li><b>07h30</b> — Largada 10km e 5km</li>
+          <li><b>07h40</b> — Largada da caminhada</li>
+          <li><b>08h30</b> — Corrida kids</li>
+          <li><b>09h30</b> — Premiação e sorteios</li>
+        </ul>
+        <p class="mini" style="margin:0">Horários preliminares, sujeitos a confirmação no regulamento oficial.</p>
+      </div>
+
+      <div class="wfblock">
+        <div class="tagrow"><span class="name">11 · Perguntas frequentes</span><span class="pill">Accordion</span></div>
+        <div class="faq">
+          <details open><summary>Como faço minha inscrição?</summary><p>As inscrições são feitas online, por esta página. Basta escolher a modalidade, preencher seus dados e concluir o pagamento. A confirmação chega por e-mail.</p></details>
+          <details><summary>Posso participar em família / levar meu filho?</summary><p>Sim. A caminhada é ideal para ir em família e a corrida kids é dedicada às crianças, por faixa etária, em área segura.</p></details>
+          <details><summary>A prova terá cronometragem?</summary><p>Sim. As provas de 5km e 10km têm cronometragem por chip no número de peito. A caminhada não é cronometrada.</p></details>
+          <details><summary>Onde retiro o kit?</summary><p>A retirada acontece em data e local a serem divulgados e, para quem não puder antes, na própria arena a partir das 06h30 no dia do evento.</p></details>
+        </div>
+      </div>
+
+      <div class="wfblock">
+        <div class="tagrow"><span class="name">12 · Organização &amp; apoio</span><span class="pill">Área de logos</span></div>
+        <p class="mini">Faixas de logos: Realização · Apoio · Patrocínio. Reforça credibilidade institucional.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+          <div style="height:40px;width:110px;background:var(--mist);border-radius:8px;display:grid;place-items:center;color:#0B6B5C;font-size:11px">logo apoio</div>
+          <div style="height:40px;width:110px;background:var(--mist);border-radius:8px;display:grid;place-items:center;color:#0B6B5C;font-size:11px">logo apoio</div>
+          <div style="height:40px;width:110px;background:var(--mist);border-radius:8px;display:grid;place-items:center;color:#0B6B5C;font-size:11px">patrocínio</div>
+          <a class="btn ghost" style="padding:9px 16px;font-size:12.5px" href="#mediakit">Seja patrocinador →</a>
+        </div>
+      </div>
+
+      <div class="wfblock" style="background:var(--teal-deep)">
+        <div class="tagrow"><span class="name" style="color:var(--amber)">13 · CTA final</span></div>
+        <h4 style="color:#fff">Faça parte da primeira.</h4>
+        <p style="color:#CFE7E2;margin-bottom:10px">As primeiras passadas da Corrida da Ternura podem ser suas. Garanta sua vaga na 1ª edição.</p>
+        <a class="btn primary">Garantir minha inscrição</a>
+      </div>
+
+      <div class="wfblock">
+        <div class="tagrow"><span class="name">14 · Rodapé</span></div>
+        <p class="mini" style="margin:0">Logo · contatos e redes · endereço e mapa · links (regulamento, política de privacidade) · faixas de realização e apoio · aviso “informações preliminares sujeitas a confirmação”.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<hr class="divider">
+<!-- ============ 06 MEDIA KIT ============ -->
+<section id="mediakit" class="alt">
+  <div class="wrap">
+    <div class="kicker"><span class="num">06</span> Media Kit de Patrocínio</div>
+    <h2 class="sec">A página comercial — vender cotas com clareza e desejo</h2>
+    <p class="sec-intro">Mesma identidade da landing, objetivo e linguagem diferentes: aqui falamos com empresários e marcas locais/regionais. Tom persuasivo, profissional e objetivo — foco em exposição, público e relacionamento. Abaixo, a estrutura com a copy pronta.</p>
+
+    <div class="wf" style="margin-top:26px">
+      <div class="wfhead"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="u">corridadaternura.com.br<b style="color:#fff">/corrida-da-ternura/media-kit</b></span></div>
+
+      <div class="wfblock" style="background:var(--teal-deep)">
+        <div class="tagrow"><span class="name" style="color:var(--amber)">01 · Hero</span></div>
+        <div class="copybox" style="background:rgba(255,255,255,.06);border-left-color:var(--amber)">
+          <span class="lab" style="color:#9FC4BE">H1</span><span style="color:#fff;font-weight:600">Seja patrocinador da 1ª Corrida da Ternura.</span>
+          <span class="lab" style="margin-top:8px;color:#9FC4BE">Subtítulo</span><span style="color:#CFE7E2">Associe sua marca a um evento esportivo, familiar e comunitário com 500 a 600 atletas e forte presença regional em Guarapuava. Uma edição inaugural — com espaço para marcas fundadoras.</span>
+          <span class="lab" style="margin-top:8px;color:#9FC4BE">Botões</span><span style="color:#fff">[ Quero receber as cotas ] &nbsp; [ Falar com a comissão ]</span>
+        </div>
+      </div>
+
+      <div class="wfblock">
+        <div class="tagrow"><span class="name">02 · Apresentação do evento</span></div>
+        <div class="copybox"><span class="lab">Texto</span>A Corrida da Ternura é um evento de corrida e caminhada realizado no Santuário da Divina e Trina Ternura, em Guarapuava/PR, com largada em 15 de novembro de 2026. São quatro modalidades — 5km, 10km, caminhada e corrida kids — pensadas para reunir atletas, famílias e comunidade em uma única manhã. Um evento de imagem positiva, saudável e agregadora, ideal para marcas que querem estar perto das pessoas.</div>
+      </div>
+
+      <div class="wfblock">
+        <div class="tagrow"><span class="name">03 · Por que patrocinar</span><span class="pill">6 argumentos</span></div>
+        <div class="grid g3" style="gap:12px">
+          <div class="comp"><b>Público qualificado</b><span>Pessoas que investem em saúde, bem-estar e família.</span></div>
+          <div class="comp"><b>Valores positivos</b><span>Sua marca ligada a esporte, comunidade e afeto.</span></div>
+          <div class="comp"><b>Marca fundadora</b><span>Ineditismo: estar na 1ª edição tem valor histórico.</span></div>
+          <div class="comp"><b>Exposição multicanal</b><span>Evento + redes + site + material impresso.</span></div>
+          <div class="comp"><b>Relacionamento real</b><span>Contato presencial com o público na arena.</span></div>
+          <div class="comp"><b>Credibilidade</b><span>Vínculo com o Santuário e a comunidade local.</span></div>
+        </div>
+      </div>
+
+      <div class="wfblock">
+        <div class="tagrow"><span class="name">04 · Público estimado</span><span class="pill amber">Estimativas</span></div>
+        <div class="qbar">
+          <div class="cell"><div class="k">Atletas</div><div class="v">500–600</div></div>
+          <div class="cell"><div class="k">No local*</div><div class="v">~1.500–2.000</div></div>
+          <div class="cell"><div class="k">Modalidades</div><div class="v">4</div></div>
+          <div class="cell"><div class="k">Praça</div><div class="v">Guarapuava + região</div></div>
+          <div class="cell"><div class="k">Edição</div><div class="v">1ª · inaugural</div></div>
+        </div>
+        <p class="mini" style="margin:8px 0 0">*Considerando atletas e acompanhantes/famílias. Alcance digital (redes e site) a ser consolidado ao longo da campanha.</p>
+      </div>
+
+      <div class="wfblock">
+        <div class="tagrow"><span class="name">05 · Potencial de exposição de marca</span></div>
+        <p class="mini">Onde a marca do patrocinador aparece:</p>
+        <div class="grid g4" style="gap:10px">
+          <div class="comp"><b>Camiseta oficial</b><span>Vestida por 500–600 atletas.</span></div>
+          <div class="comp"><b>Número de peito</b><span>Presente em todas as fotos de prova.</span></div>
+          <div class="comp"><b>Arco de largada/chegada</b><span>O ponto mais fotografado do evento.</span></div>
+          <div class="comp"><b>Banners no percurso</b><span>Exposição ao longo do trajeto e arena.</span></div>
+          <div class="comp"><b>Kit do atleta</b><span>Brinde ou material inserido no kit.</span></div>
+          <div class="comp"><b>Redes &amp; site</b><span>Posts, stories e página oficial.</span></div>
+          <div class="comp"><b>Locução no palco</b><span>Citação da marca na largada/premiação.</span></div>
+          <div class="comp"><b>Impressos &amp; digitais</b><span>Cartazes, banners e peças da campanha.</span></div>
+        </div>
+      </div>
+
+      <div class="wfblock">
+        <div class="tagrow"><span class="name">06 · Oportunidades de ativação</span></div>
+        <p class="mini" style="margin:0">Estande/tenda na arena · sampling e degustação · ponto de hidratação com a marca · brinde patrocinado no kit · ativação no pódio e sorteios · mural de fotos · captação de leads (com consentimento) para relacionamento pós-evento.</p>
+      </div>
+
+      <div class="wfblock">
+        <div class="tagrow"><span class="name">07 · Cotas de patrocínio</span><span class="pill teal">5 níveis</span></div>
+        <div class="grid g3" style="gap:12px">
+          <div class="tier master" style="grid-column:span 3">
+            <span class="lvl">Cota única · exclusiva</span>
+            <span class="crown">Master &nbsp;<span style="font-size:13px;font-weight:600;color:#CFE7E2">— naming rights</span></span>
+            <p style="margin:0">A marca apresenta o evento: “1ª Corrida da Ternura — apresentada por [sua marca]”. Máxima exposição em todos os pontos, exclusividade de segmento e presença premium na arena.</p>
           </div>
-          <a class="btn btn--amber" href="[[WHATSAPP]]">Quero a Master</a>
+          <div class="tier"><span class="lvl">Cota</span><span class="crown">Ouro</span><ul><li>Logo em destaque na camiseta e no número</li><li>Marca no arco de largada/chegada</li><li>Post dedicado + estande na arena</li></ul></div>
+          <div class="tier"><span class="lvl">Cota</span><span class="crown">Prata</span><ul><li>Logo na camiseta (médio)</li><li>Banner no percurso/arena</li><li>Item no kit + logo no site</li></ul></div>
+          <div class="tier"><span class="lvl">Cota</span><span class="crown">Bronze</span><ul><li>Logo na camiseta (pequeno)</li><li>Banner na arena</li><li>Logo no site e media kit</li></ul></div>
+          <div class="tier" style="grid-column:span 3"><span class="lvl">Cota</span><span class="crown">Apoio</span><p style="margin:0;color:var(--muted);font-size:14px">Para comércios e parceiros locais: marca no site e nas faixas de apoio, com contrapartida em produto/serviço quando fizer sentido. Porta de entrada acessível para a comunidade empresarial.</p></div>
         </div>
+        <p class="mini" style="margin-top:10px">Investimento por cota: <b>sob consulta</b> — os valores sugeridos serão definidos com a comissão a partir da estrutura de custos e das metas da 1ª edição.</p>
       </div>
 
-      <div class="grid cols-4">
-        <div class="tier reveal">
-          <span class="lvl">Cota</span><div class="name">Ouro</div>
-          <ul><li>Logo em destaque na camiseta e no número</li><li>Marca no arco de largada/chegada</li><li>Post dedicado nas redes</li><li>Estande na arena · 6 cortesias</li></ul>
-          <a class="btn btn--ghost btn--sm" href="[[WHATSAPP]]">Tenho interesse</a>
+      <div class="wfblock">
+        <div class="tagrow"><span class="name">08 · Tabela comparativa de benefícios</span></div>
+        <div class="tablewrap" style="box-shadow:none">
+          <table class="benefits">
+            <thead><tr><th style="text-align:left">Benefício</th><th class="master">Master</th><th>Ouro</th><th>Prata</th><th>Bronze</th><th>Apoio</th></tr></thead>
+            <tbody>
+              <tr><td>Exclusividade de segmento</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">–</td><td class="no">–</td><td class="no">–</td></tr>
+              <tr><td>Naming rights (nome do evento)</td><td class="yes">✓</td><td class="no">–</td><td class="no">–</td><td class="no">–</td><td class="no">–</td></tr>
+              <tr><td>Logo na camiseta oficial</td><td>Destaque</td><td>Grande</td><td>Médio</td><td>Pequeno</td><td class="no">–</td></tr>
+              <tr><td>Logo no número de peito</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">–</td><td class="no">–</td><td class="no">–</td></tr>
+              <tr><td>Marca no arco de largada/chegada</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">–</td><td class="no">–</td><td class="no">–</td></tr>
+              <tr><td>Banner no percurso / arena</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">–</td></tr>
+              <tr><td>Item / brinde no kit do atleta</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">–</td><td class="no">–</td></tr>
+              <tr><td>Post dedicado nas redes</td><td class="yes">✓</td><td class="yes">✓</td><td>Compart.</td><td class="no">–</td><td class="no">–</td></tr>
+              <tr><td>Logo no site e no media kit</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+              <tr><td>Citação na locução (palco)</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">–</td><td class="no">–</td></tr>
+              <tr><td>Estande / ativação na arena</td><td>Premium</td><td class="yes">✓</td><td>Opcional</td><td class="no">–</td><td class="no">–</td></tr>
+              <tr><td>Inscrições cortesia</td><td>10</td><td>6</td><td>3</td><td>1</td><td class="no">–</td></tr>
+            </tbody>
+          </table>
         </div>
-        <div class="tier reveal">
-          <span class="lvl">Cota</span><div class="name">Prata</div>
-          <ul><li>Logo na camiseta (tamanho médio)</li><li>Banner no percurso/arena</li><li>Item no kit + logo no site</li><li>3 cortesias</li></ul>
-          <a class="btn btn--ghost btn--sm" href="[[WHATSAPP]]">Tenho interesse</a>
-        </div>
-        <div class="tier reveal">
-          <span class="lvl">Cota</span><div class="name">Bronze</div>
-          <ul><li>Logo na camiseta (pequeno)</li><li>Banner na arena</li><li>Logo no site e no media kit</li><li>1 cortesia</li></ul>
-          <a class="btn btn--ghost btn--sm" href="[[WHATSAPP]]">Tenho interesse</a>
-        </div>
-        <div class="tier reveal">
-          <span class="lvl">Cota</span><div class="name">Apoio</div>
-          <ul><li>Para comércios e parceiros locais</li><li>Marca no site e nas faixas de apoio</li><li>Contrapartida em produto/serviço</li><li>Porta de entrada acessível</li></ul>
-          <a class="btn btn--ghost btn--sm" href="[[WHATSAPP]]">Quero apoiar</a>
-        </div>
+        <p class="mini" style="margin-top:8px">Tabela de referência — os benefícios podem ser ajustados e combinados conforme o objetivo de cada marca.</p>
       </div>
-    </div>
-  </section>
 
-  <!-- ============ TABELA DE BENEFÍCIOS ============ -->
-  <section class="section" id="beneficios">
-    <div class="container">
-      <div class="reveal" style="margin-bottom:30px">
-        <span class="kicker">Comparativo</span>
-        <h2 class="section-title">Benefícios por cota</h2>
-        <p class="lead">Tabela de referência — os benefícios podem ser ajustados e combinados conforme o objetivo de cada marca.</p>
-      </div>
-      <div class="table-wrap reveal">
-        <table class="benefits">
-          <thead>
-            <tr><th>Benefício</th><th class="master">Master</th><th>Ouro</th><th>Prata</th><th>Bronze</th><th>Apoio</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Exclusividade de segmento</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">–</td><td class="no">–</td><td class="no">–</td></tr>
-            <tr><td>Naming rights (nome do evento)</td><td class="yes">✓</td><td class="no">–</td><td class="no">–</td><td class="no">–</td><td class="no">–</td></tr>
-            <tr><td>Logo na camiseta oficial</td><td>Destaque</td><td>Grande</td><td>Médio</td><td>Pequeno</td><td class="no">–</td></tr>
-            <tr><td>Logo no número de peito</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">–</td><td class="no">–</td><td class="no">–</td></tr>
-            <tr><td>Marca no arco de largada/chegada</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">–</td><td class="no">–</td><td class="no">–</td></tr>
-            <tr><td>Banner no percurso / arena</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">–</td></tr>
-            <tr><td>Item / brinde no kit do atleta</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">–</td><td class="no">–</td></tr>
-            <tr><td>Post dedicado nas redes</td><td class="yes">✓</td><td class="yes">✓</td><td>Compart.</td><td class="no">–</td><td class="no">–</td></tr>
-            <tr><td>Logo no site e no media kit</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
-            <tr><td>Citação na locução (palco)</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">–</td><td class="no">–</td></tr>
-            <tr><td>Estande / ativação na arena</td><td>Premium</td><td class="yes">✓</td><td>Opcional</td><td class="no">–</td><td class="no">–</td></tr>
-            <tr><td>Inscrições cortesia</td><td>10</td><td>6</td><td>3</td><td>1</td><td class="no">–</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ ESPAÇOS DE MARCA ============ -->
-  <section class="section section--alt">
-    <div class="container">
-      <div class="reveal" style="margin-bottom:30px">
-        <span class="kicker">Espaços de marca</span>
-        <h2 class="section-title">Sua logo, em toda parte</h2>
-      </div>
-      <div class="grid cols-3">
-        <figure class="mock reveal"><img src="assets/img/camiseta.jpg" alt="Camiseta oficial da corrida com a marca dos patrocinadores"><figcaption>Camiseta oficial<small>Vestida por 500–600 atletas</small></figcaption></figure>
-        <figure class="mock reveal"><img src="assets/img/portal.jpg" alt="Arco de largada e chegada com as marcas dos patrocinadores"><figcaption>Arco de largada/chegada<small>O ponto mais fotografado</small></figcaption></figure>
-        <figure class="mock reveal"><img src="assets/img/palco.jpg" alt="Palco e pódio com backdrop dos patrocinadores"><figcaption>Palco &amp; pódio<small>Backdrop e locução</small></figcaption></figure>
-        <figure class="mock reveal"><img src="assets/img/estande.jpg" alt="Estande de ativação do patrocinador na arena do evento"><figcaption>Estande na arena<small>Ativação e relacionamento</small></figcaption></figure>
-        <figure class="mock reveal"><img src="assets/img/kit-completo.jpg" alt="Kit do atleta com itens dos patrocinadores"><figcaption>Kit do atleta<small>Brinde ou inserção no kit</small></figcaption></figure>
-        <figure class="mock reveal"><img src="assets/img/kit.jpg" alt="Número de peito com faixa de patrocínio, medalha e squeeze"><figcaption>Número de peito<small>Faixa de patrocínio</small></figcaption></figure>
-      </div>
-      <p class="note reveal" style="margin-top:22px">Imagens ilustrativas (mockups). Na etapa de fechamento, produzimos as aplicações com a marca de cada patrocinador.</p>
-    </div>
-  </section>
-
-  <!-- ============ CTA COMERCIAL ============ -->
-  <section class="section" id="contato">
-    <div class="container">
-      <div class="cta-band reveal">
-        <span class="pill pill--amber" style="margin-bottom:14px">Cotas limitadas por segmento</span>
-        <h2>Vamos construir a 1ª edição juntos</h2>
-        <p>As cotas são limitadas por segmento para garantir exclusividade. Fale com a comissão organizadora e reserve o espaço da sua marca na estreia da Corrida da Ternura.</p>
-        <p style="color:#fff;font-family:var(--font-display);font-weight:600">📱 WhatsApp comercial &nbsp;·&nbsp; ✉️ <a href="mailto:[[EMAIL]]" style="color:#fff;text-decoration:underline">[[EMAIL]]</a></p>
-        <div>
-          <a class="btn btn--amber" href="[[WHATSAPP]]">Quero patrocinar</a>
-          <a class="btn btn--ghost-light" href="[[LINK_PDF_MEDIAKIT]]">Baixar apresentação (PDF)</a>
+      <div class="wfblock">
+        <div class="tagrow"><span class="name">09 · Espaços de marca</span><span class="pill">Mockups na versão final</span></div>
+        <div class="grid g3" style="gap:12px">
+          <div style="background:var(--sand);border:1px dashed var(--line);border-radius:12px;padding:16px;text-align:center;font-family:var(--font-display);font-weight:600;color:var(--teal-deep)">👕 Camiseta<br><span class="mini" style="font-weight:400">peito + costas</span></div>
+          <div style="background:var(--sand);border:1px dashed var(--line);border-radius:12px;padding:16px;text-align:center;font-family:var(--font-display);font-weight:600;color:var(--teal-deep)">🔢 Número de peito<br><span class="mini" style="font-weight:400">faixa de patrocínio</span></div>
+          <div style="background:var(--sand);border:1px dashed var(--line);border-radius:12px;padding:16px;text-align:center;font-family:var(--font-display);font-weight:600;color:var(--teal-deep)">🏁 Arco largada/chegada<br><span class="mini" style="font-weight:400">backdrop</span></div>
         </div>
+        <p class="mini" style="margin-top:8px">Também: banners no percurso, redes sociais, kit do atleta, materiais impressos e digitais.</p>
+      </div>
+
+      <div class="wfblock">
+        <div class="tagrow"><span class="name">10 · Naming rights</span><span class="pill amber">Exclusivo da cota Master</span></div>
+        <div class="copybox"><span class="lab">Chamada</span>Uma marca pode <b>assinar a 1ª edição</b>: “1ª Corrida da Ternura — apresentada por [sua marca]”, presente no nome do evento, no arco, na camiseta e em toda a comunicação. A associação mais forte possível com o pioneirismo do evento.</div>
+      </div>
+
+      <div class="wfblock" style="background:var(--teal-deep)">
+        <div class="tagrow"><span class="name" style="color:var(--amber)">11 · Contato comercial + conversão</span></div>
+        <h4 style="color:#fff">Vamos construir a 1ª edição juntos.</h4>
+        <p style="color:#CFE7E2;margin-bottom:6px">As cotas são limitadas por segmento para garantir exclusividade. Fale com a comissão organizadora e reserve o espaço da sua marca.</p>
+        <p style="color:#fff;font-family:var(--font-display);font-weight:600;margin-bottom:12px">📞 WhatsApp comercial &nbsp;·&nbsp; ✉️ e-mail da comissão &nbsp;·&nbsp; prazo para fechamento</p>
+        <a class="btn amber">Quero patrocinar</a> &nbsp; <a class="btn ghost" style="color:#fff;border-color:#fff">Baixar apresentação (PDF)</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+<hr class="divider">
+<!-- ============ 07 ARQUITETURA ============ -->
+<section id="arquitetura">
+  <div class="wrap">
+    <div class="kicker"><span class="num">07</span> Arquitetura dos dois sites</div>
+    <h2 class="sec">Uma marca, dois destinos, um só domínio</h2>
+    <p class="sec-intro">Estrutura simples e clara: uma página pública para participantes e uma página separada de media kit para patrocinadores. As duas dividem a mesma identidade visual, mas têm objetivos, linguagem e CTAs diferentes.</p>
+
+    <div class="grid g2" style="margin-top:26px">
+      <div class="card">
+        <div class="pill teal">Público · participantes</div>
+        <h3 style="margin:12px 0 4px">/corrida-da-ternura</h3>
+        <p style="margin-bottom:10px">Objetivo: informar e <b>direcionar</b> para a inscrição (que acontece na plataforma que o evento já utiliza). Voz clara, comercial e institucional. CTA dominante: “Inscreva-se”.</p>
+        <ul class="clean" style="font-size:14px">
+          <li><b>/corrida-da-ternura</b> — landing principal</li>
+          <li><b>Botão “Inscreva-se”</b> — link externo para a plataforma de inscrição existente</li>
+          <li><b>/corrida-da-ternura/regulamento</b> — PDF oficial (opcional)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="pill coral">Comercial · patrocinadores</div>
+        <h3 style="margin:12px 0 4px">/corrida-da-ternura/media-kit</h3>
+        <p style="margin-bottom:10px">Objetivo: vender <b>cotas</b>. Voz persuasiva, profissional e objetiva. CTA dominante: “Quero patrocinar / Falar com a comissão”.</p>
+        <ul class="clean" style="font-size:14px">
+          <li><b>/corrida-da-ternura/media-kit</b> — página comercial</li>
+          <li><b>Baixar PDF</b> — mesma apresentação em arquivo para enviar a empresas</li>
+          <li><b>Clique-para-WhatsApp</b> — contato comercial direto</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="note" style="margin-top:18px"><b>Ponte entre as páginas:</b> o rodapé da landing traz “Seja patrocinador →” apontando para o media kit; o media kit traz “Ver a corrida →” apontando para a landing. Mesmos <b>design tokens</b> (cores, fontes, componentes) — só muda o objetivo e o tom.</div>
+  </div>
+</section>
+<hr class="divider">
+
+<!-- ============ 08 LAYOUT ============ -->
+<section id="layout" class="alt">
+  <div class="wrap">
+    <div class="kicker"><span class="num">08</span> Direção de Layout</div>
+    <h2 class="sec">Como cada página respira</h2>
+    <p class="sec-intro">Hierarquia forte, ritmo alternado e muito respiro. As duas páginas usam o mesmo “esqueleto” — hero de alto impacto, blocos alternando fundo claro/escuro, cards para escanear rápido e CTAs recorrentes — mas com pesos diferentes.</p>
+
+    <div class="grid g2" style="margin-top:26px">
+      <div class="card">
+        <h3>Landing pública</h3>
+        <ul class="clean" style="font-size:14.5px">
+          <li><b>Hero</b> full-width com foto ao amanhecer (duotone), H1 grande em Sora e CTA duplo.</li>
+          <li><b>Barra de informações rápidas</b> logo abaixo do hero, fixando data/hora/local/modalidades/vagas.</li>
+          <li><b>Ritmo:</b> alterna areia e branco; a seção CTA e o rodapé em verde profundo para ancorar.</li>
+          <li><b>Cards</b> para “Para quem é” e “Modalidades” (4 cards escaneáveis, cor por modalidade).</li>
+          <li><b>Imagens</b> emocionais e reais em blocos largos; mapa como bloco dedicado.</li>
+          <li><b>CTAs</b> coral recorrentes: topo, após modalidades e no fechamento.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Media kit</h3>
+        <ul class="clean" style="font-size:14.5px">
+          <li><b>Hero</b> em verde profundo (tom mais executivo) com a proposta de valor e CTA de contato.</li>
+          <li><b>Prova/números</b> logo no início (público estimado) para gerar credibilidade.</li>
+          <li><b>Ritmo:</b> argumentos em cards → cotas em cards → tabela comparativa como clímax de decisão.</li>
+          <li><b>Cards de cota</b> com destaque para Master (fundo escuro, âmbar) e hierarquia decrescente.</li>
+          <li><b>Tabela</b> de benefícios central, com scroll horizontal no mobile.</li>
+          <li><b>CTAs</b> âmbar de contato comercial repetidos + botão “Baixar PDF”.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid g3" style="margin-top:18px">
+      <div class="card"><div class="pill">Ritmo visual</div><p style="margin-top:10px">Seção clara → seção clara → âncora escura. Nunca dois blocos escuros seguidos. Respiro generoso (80–120px entre seções no desktop).</p></div>
+      <div class="card"><div class="pill">Desktop</div><p style="margin-top:10px">Grid de 12 colunas, largura máx. ~1120px. Heros a 2 colunas (texto + imagem). Cards em 3–4 colunas.</p></div>
+      <div class="card"><div class="pill">Mobile</div><p style="margin-top:10px">Tudo em 1 coluna, cards empilhados, CTA fixo no rodapé da tela, tabela de cotas com scroll lateral. Menu compacto.</p></div>
+    </div>
+  </div>
+</section>
+<hr class="divider">
+<!-- ============ 09 COMPONENTES ============ -->
+<section id="componentes">
+  <div class="wrap">
+    <div class="kicker"><span class="num">09</span> Componentes Visuais</div>
+    <h2 class="sec">O kit de peças que constrói as duas páginas</h2>
+    <p class="sec-intro">Um sistema de componentes reutilizáveis garante consistência entre site, media kit, redes e impressos — e acelera a produção da próxima etapa.</p>
+
+    <div style="background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow-sm);margin:24px 0">
+      <div class="mini" style="margin-bottom:14px"><b style="color:var(--teal-deep);font-family:var(--font-display)">Botões</b> — pill, Sora 700</div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <button class="btn primary">Inscreva-se →</button>
+        <button class="btn dark">Ver modalidades</button>
+        <button class="btn amber">Quero patrocinar</button>
+        <button class="btn ghost">Falar com a comissão</button>
+      </div>
+      <div class="mini" style="margin:14px 0 6px"><b style="color:var(--teal-deep);font-family:var(--font-display)">Chips / tags</b></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap"><span class="pill teal">10 km</span><span class="pill">Caminhada</span><span class="pill coral">Vagas limitadas</span><span class="pill amber">Cota Master</span></div>
+    </div>
+
+    <div class="complist">
+      <div class="comp"><b>Hero</b><span>Full-width, foto duotone + H1 Sora + CTA duplo. Variante clara (landing) e escura (media kit).</span></div>
+      <div class="comp"><b>Barra de informações rápidas</b><span>5 células: data, horário, local, modalidades, vagas.</span></div>
+      <div class="comp"><b>Card de modalidade</b><span>Distância grande, público-alvo, badge de cor, indicação.</span></div>
+      <div class="comp"><b>Card de cota</b><span>Nível, benefícios em lista, destaque para Master.</span></div>
+      <div class="comp"><b>Tabela de benefícios</b><span>Linhas de benefício × colunas de cota, scroll no mobile.</span></div>
+      <div class="comp"><b>Bloco de FAQ</b><span>Accordion enxuto, uma pergunta aberta por padrão.</span></div>
+      <div class="comp"><b>Botões / CTAs</b><span>Primário coral, escuro, âmbar e ghost.</span></div>
+      <div class="comp"><b>Área de patrocinadores</b><span>Faixas por nível (realização, apoio, patrocínio).</span></div>
+      <div class="comp"><b>Espaço para logos</b><span>Grade neutra com placeholders proporcionais.</span></div>
+      <div class="comp"><b>Bloco de chamada (CTA)</b><span>Fundo verde profundo, título + botão, recorrente.</span></div>
+      <div class="comp"><b>Rodapé</b><span>Logo, contatos, redes, mapa, links legais e aviso.</span></div>
+      <div class="comp"><b>Cronograma</b><span>Lista de horários com marcadores turquesa.</span></div>
+    </div>
+  </div>
+</section>
+<hr class="divider">
+
+<!-- ============ 10 TÉCNICO ============ -->
+<section id="tecnico" class="alt">
+  <div class="wrap">
+    <div class="kicker"><span class="num">10</span> Recomendações Técnicas</div>
+    <h2 class="sec">O que preparar para a próxima etapa</h2>
+    <p class="sec-intro">Recomendações para construir as duas páginas com qualidade profissional, rápidas e fáceis de manter — e prontas para gerar relatórios de exposição aos patrocinadores.</p>
+
+    <div class="grid g3" style="margin-top:26px">
+      <div class="card"><h3>Stack</h3><p>HTML/CSS/JS estático (rápido e barato) ou Astro/Next para escalar. Tailwind opcional. Design tokens deste brandbook viram variáveis CSS.</p></div>
+      <div class="card"><h3>Inscrições</h3><p>A inscrição acontece na plataforma que o evento já utiliza. A landing apenas <b>direciona</b>: o botão “Inscreva-se” aponta para esse link. Não é preciso construir sistema de inscrição.</p></div>
+      <div class="card"><h3>Hospedagem &amp; domínio</h3><p>Vercel, Netlify ou similar (deploy contínuo, HTTPS grátis). Domínio próprio, ex.: corridadaternura.com.br.</p></div>
+      <div class="card"><h3>SEO &amp; compartilhamento</h3><p>Títulos e meta descriptions, Open Graph/Twitter cards com a arte do evento, sitemap. Rich preview ao compartilhar no WhatsApp.</p></div>
+      <div class="card"><h3>Favicon &amp; ícones</h3><p>Conjunto a partir do símbolo (16–512px), apple-touch-icon e web manifest — já previstos no sistema de logo.</p></div>
+      <div class="card"><h3>Performance</h3><p>Imagens otimizadas (WebP), lazy-load, duotone via CSS, fontes Google com <code>display=swap</code>. Meta: carregar em segundos no 4G.</p></div>
+      <div class="card"><h3>Acessibilidade</h3><p>Contraste AA, textos alternativos, navegação por teclado, foco visível. Já respeitado nas escolhas de cor.</p></div>
+      <div class="card"><h3>Métricas &amp; relatórios</h3><p>GA4 + Meta Pixel para medir inscrições e alcance — dados que viram relatório de retorno para os patrocinadores.</p></div>
+      <div class="card"><h3>Comercial &amp; LGPD</h3><p>Clique-para-WhatsApp comercial, PDF do media kit para download, consentimento de dados na inscrição e política de privacidade.</p></div>
+    </div>
+
+    <div class="callout" style="margin-top:34px">
+      <div class="pill amber" style="margin-bottom:12px">Próximo passo</div>
+      <h3>Aprovado o rumo? Eu gero as duas páginas.</h3>
+      <p style="max-width:64ch;margin:0 auto">Com o seu ok neste diagnóstico, identidade e estrutura, parto para o <b>HTML/CSS/JS responsivo</b> das duas páginas (ou na tecnologia que preferir), já com este sistema visual aplicado — e exporto os arquivos de logo em todos os formatos.</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:20px">
+        <span class="btn amber">Aprovar e seguir para o site</span>
+        <span class="btn ghost" style="color:#fff;border-color:rgba(255,255,255,.5)">Pedir ajustes</span>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
 
-<!-- ============ RODAPÉ ============ -->
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <img src="assets/logo-negativa-branca.svg" alt="1ª Corrida da Ternura" style="width:240px;margin-bottom:14px">
-        <p style="color:#9FC4BE;max-width:34ch">Corrida e caminhada no Santuário da Divina e Trina Ternura, em Guarapuava/PR. Esporte, família e comunidade.</p>
-        <div class="footer-partner">
-          <img src="assets/img/santuario.png" alt="Santuário da Divina e Trina Ternura">
-          <span>Realização<br><b style="color:#fff">Santuário da Divina e Trina Ternura</b></span>
-        </div>
-      </div>
-      <div>
-        <h4>Patrocínio</h4>
-        <ul>
-          <li><a href="#porque">Por que patrocinar</a></li>
-          <li><a href="#cotas">Cotas</a></li>
-          <li><a href="#beneficios">Benefícios</a></li>
-          <li><a href="index.html">Ver a corrida</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contato comercial</h4>
-        <ul>
-          <li>✉️ <a href="mailto:[[EMAIL]]">[[EMAIL]]</a></li>
-          <li>📱 <a href="[[WHATSAPP]]">WhatsApp comercial</a></li>
-          <li>📷 <a href="[[INSTAGRAM]]">Instagram</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 Corrida da Ternura. Todos os direitos reservados.</span>
-      <span>Valores e contrapartidas sujeitos a confirmação em proposta comercial.</span>
-    </div>
+<footer class="docfoot">
+  <div class="wrap">
+    <div><b>1ª Corrida da Ternura</b> — Brandbook &amp; Direção Criativa (Fase 1)</div>
+    <div>Proposta original · não replica nenhuma referência enviada · sistema aplicável a site, redes e material impresso.</div>
   </div>
 </footer>
 
-<script src="js/main.js"></script>
 </body>
 </html>
