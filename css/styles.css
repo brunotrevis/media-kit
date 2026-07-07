@@ -5,20 +5,25 @@
 
 /* ---------- Tokens ---------- */
 :root{
-  /* Cores da marca */
-  --teal:#0FB2A6;          /* cor de marca / grafismos */
-  --teal-deep:#0B3B38;     /* base escura / texto forte */
-  --teal-deeper:#08302D;   /* fundo escuro mais profundo */
-  --coral:#FF6A5A;         /* CTA / destaque quente */
-  --coral-ink:#D9432F;     /* coral escuro p/ texto sobre claro */
-  --amber:#FFB24C;         /* destaque / amanhecer / medalha */
-  --sand:#FBF6EE;          /* fundo claro quente */
-  --mist:#DBF1EC;          /* fundo suave / cards */
-  --graphite:#1E2A29;      /* texto corrido */
-  --muted:#5B6B69;         /* texto secundário */
+  /* Cores da marca — rebaseadas na logo do Santuário da Divina e Trina Ternura */
+  --teal:#CE141F;          /* vermelho litúrgico — cor de marca */
+  --teal-deep:#5A1116;     /* vinho profundo — base escura / texto forte */
+  --teal-deeper:#3E0C10;   /* vinho mais profundo */
+  --coral:#CE141F;         /* CTA — vermelho */
+  --coral-ink:#9B0F17;     /* vermelho escuro p/ texto sobre claro */
+  --amber:#F5C21A;         /* amarelo da Trindade / destaque / medalha */
+  --sand:#FBF3E7;          /* creme — fundo claro quente */
+  --mist:#F7EAD8;          /* creme suave / cards */
+  --graphite:#33231A;      /* espresso — texto corrido */
+  --muted:#7C6A58;         /* texto secundário */
   --white:#fff;
-  --line:#E7E0D4;          /* linhas / bordas claras */
-  --line-dark:#1C4B46;     /* linhas no escuro */
+  --line:#EADEC9;          /* linhas / bordas claras */
+  --line-dark:#6E2A2E;     /* linhas no escuro (vinho) */
+  /* Trindade + franciscano (acentos) */
+  --gold:#F5C21A;          /* amarelo (Pai) */
+  --green:#0E904C;         /* verde (Filho) */
+  --blue:#1776B8;          /* azul mariano ("M") */
+  --wood:#7D5C35;          /* madeira — cruz/Tau franciscano */
 
   /* Tipografia */
   --font-display:'Sora','Segoe UI',system-ui,-apple-system,sans-serif;
@@ -27,8 +32,8 @@
   /* Formas & sombras */
   --radius:22px;
   --radius-sm:14px;
-  --shadow:0 20px 50px -24px rgba(11,59,56,.45);
-  --shadow-sm:0 8px 22px -12px rgba(11,59,56,.35);
+  --shadow:0 20px 50px -24px rgba(90,17,22,.45);
+  --shadow-sm:0 8px 22px -12px rgba(90,17,22,.35);
 
   /* Layout */
   --maxw:1140px;
@@ -60,6 +65,8 @@ p{margin:0 0 1em}
 .nav{display:flex;align-items:center;gap:18px;height:var(--header-h)}
 .brand{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:800;font-size:16px;color:var(--teal-deep);white-space:nowrap}
 .brand svg,.brand img{height:34px;width:auto;flex:none}
+.brand svg.brand-logo{height:46px;width:auto}
+@media(max-width:520px){.brand svg.brand-logo{height:38px}}
 .site-header.on-dark .brand{color:var(--white)}
 .nav-links{display:flex;align-items:center;gap:2px;margin-left:auto}
 .nav-links a{font-family:var(--font-display);font-weight:600;font-size:14px;color:var(--muted);padding:9px 12px;border-radius:999px;transition:.15s;white-space:nowrap}
@@ -80,7 +87,7 @@ p{margin:0 0 1em}
 }
 .btn:hover{transform:translateY(-2px)}
 .btn--primary{background:var(--coral);color:#fff;box-shadow:0 12px 26px -12px rgba(255,106,90,.8)}
-.btn--primary:hover{background:#ff5945}
+.btn--primary:hover{background:#A5101A}
 .btn--amber{background:var(--amber);color:var(--teal-deep)}
 .btn--amber:hover{background:#ffa733}
 .btn--dark{background:var(--teal-deep);color:#fff}
@@ -91,6 +98,13 @@ p{margin:0 0 1em}
 .btn--ghost-light:hover{background:#fff;color:var(--teal-deep);border-color:#fff}
 .btn--sm{padding:11px 18px;font-size:13.5px}
 .btn--block{width:100%}
+/* contraste garantido dos botões dentro do menu (vence a especificidade de .nav-links a) */
+.nav-links a.btn--primary,.nav-links a.btn--dark{color:#fff}
+.nav-links a.btn--amber{color:var(--teal-deep)}
+.nav-links a.btn--ghost{color:var(--teal-deep)}
+.nav-links a.btn:hover{background:var(--teal-deeper)}
+.nav-links a.btn--primary:hover{background:#A5101A;color:#fff}
+.nav-links a.btn--amber:hover{background:#E3A200;color:var(--teal-deep)}
 
 /* ---------- Seções ---------- */
 .section{padding:84px 0}
@@ -128,9 +142,9 @@ p{margin:0 0 1em}
 /* ---------- Hero ---------- */
 .hero{position:relative;overflow:hidden;color:var(--sand);
   background:
-    radial-gradient(90% 70% at 85% -10%, rgba(255,178,76,.42), transparent 55%),
-    radial-gradient(80% 80% at -5% 110%, rgba(15,178,166,.30), transparent 55%),
-    linear-gradient(160deg,#0B3B38 0%, #0E4A45 100%);
+    radial-gradient(90% 70% at 85% -10%, rgba(245,194,26,.30), transparent 55%),
+    radial-gradient(80% 80% at -5% 110%, rgba(206,20,31,.38), transparent 55%),
+    linear-gradient(160deg,#5A1116 0%, #3E0C10 100%);
 }
 .hero::after{ /* textura de curvas de nível sutis */
   content:"";position:absolute;inset:0;opacity:.10;pointer-events:none;
@@ -159,10 +173,10 @@ p{margin:0 0 1em}
 /* ---------- Modalidades ---------- */
 .mod{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow-sm);overflow:hidden}
 .mod::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--teal)}
-.mod--5::before{background:var(--teal)}
-.mod--10::before{background:var(--coral)}
-.mod--cam::before{background:var(--amber)}
-.mod--kids::before{background:#5AC9BC}
+.mod--5::before{background:var(--gold)}
+.mod--10::before{background:var(--teal)}
+.mod--cam::before{background:var(--green)}
+.mod--kids::before{background:var(--blue)}
 .mod .tag{font-family:var(--font-display);font-weight:700;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted)}
 .mod .dist{font-family:var(--font-display);font-weight:800;font-size:30px;color:var(--teal-deep);margin:2px 0 8px}
 .mod p{color:var(--muted);margin:0;font-size:15px}
@@ -210,7 +224,7 @@ p{margin:0 0 1em}
 .tier li{position:relative;padding-left:24px;margin-bottom:8px;color:var(--muted);font-size:14.5px}
 .tier li::before{content:"✓";position:absolute;left:0;color:var(--teal);font-weight:800}
 .tier .btn{margin-top:auto}
-.tier--master{background:linear-gradient(165deg,#0B3B38,#0E4A45);border:0;color:#fff}
+.tier--master{background:linear-gradient(165deg,#5A1116,#4A0E12);border:0;color:#fff}
 .tier--master .name{color:#fff}.tier--master .lvl{color:var(--amber)}
 .tier--master p,.tier--master li{color:#CFE7E2}
 .tier--master li::before{color:var(--amber)}
@@ -242,7 +256,13 @@ table.benefits .no{color:#C9C2B4}
 .sponsor-slot{height:56px;width:150px;background:#fff;border:1px solid var(--line);border-radius:12px;display:grid;place-items:center;color:var(--muted);font-size:12px}
 
 /* ---------- Nota ---------- */
-.note{background:var(--mist);border:1px solid #C7E9E0;border-radius:var(--radius-sm);padding:16px 20px;color:#0B6B5C;font-size:14.5px}
+.note{background:var(--mist);border:1px solid #E6D3B8;border-radius:var(--radius-sm);padding:16px 20px;color:#7A2E12;font-size:14.5px}
+
+/* ---------- Faixa de Escritura (Salmo) ---------- */
+.scripture{background:linear-gradient(160deg,var(--teal-deep),var(--teal-deeper));color:var(--sand);text-align:center;padding:clamp(52px,9vw,92px) 0}
+.scripture .mark{font-family:var(--font-display);font-weight:800;font-size:64px;line-height:.4;color:var(--amber);opacity:.55;height:32px}
+.scripture blockquote{margin:0 auto;font-family:var(--font-display);font-weight:600;font-style:italic;font-size:clamp(22px,4.2vw,40px);line-height:1.22;max-width:19ch;color:#fff}
+.scripture .ref{display:inline-block;margin-top:20px;font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--amber)}
 .badge-soon{display:inline-block;background:#FFEFD4;color:#9A6412;font-family:var(--font-display);font-weight:700;font-size:11px;letter-spacing:1px;text-transform:uppercase;padding:4px 10px;border-radius:999px}
 
 /* ---------- Rodapé ---------- */
@@ -271,7 +291,7 @@ table.benefits .no{color:#C9C2B4}
   .nav-links a{padding:14px 12px;font-size:16px;border-radius:12px}
   .nav-links a:hover{background:var(--mist)}
   .nav-cta{margin:8px 0 0}
-  .site-header:not(.scrolled){background:rgba(11,59,56,.0)}
+  .site-header:not(.scrolled){background:rgba(90,17,22,.0)}
   .site-header.menu-open{background:var(--sand)}
   .site-header.menu-open .brand,.site-header.menu-open .nav-toggle{color:var(--teal-deep)}
 }
