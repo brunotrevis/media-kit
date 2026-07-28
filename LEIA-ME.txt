@@ -1,0 +1,21 @@
+MEDIA KIT (standalone) — 1ª Corrida da Ternura
+==============================================
+
+O QUE É
+  A página de patrocínio (cotas) sozinha, para hospedar num endereço próprio
+  (ex.: patrocinio.seudominio.com). A "home" é o index.html.
+
+  Obs.: esta mesma página já existe DENTRO do site oficial (media-kit.html).
+  Use esta pasta só se quiser o media kit separado. Se não, ignore.
+
+IMPORTANTE
+  Incluí as pastas css/ e js/ que faltavam — sem elas a página subia sem estilo.
+
+COMO SUBIR
+  Envie TODO o conteúdo desta pasta para a raiz do host escolhido.
+
+ANTES DE PUBLICAR — preencha os campos entre [[ ]]
+  Procure por "[[" no index.html e troque por:
+    [[WHATSAPP]] ............ número/link do WhatsApp
+    [[INSTAGRAM]] ........... @ ou link do Instagram
+    [[LINK_PDF_MEDIAKIT]] ... link do PDF do media kit
