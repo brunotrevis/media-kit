@@ -17,6 +17,47 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
+
+<!-- ==== CORREÇÃO DOS PREÇOS DAS COTAS (bloco autocontido) =================
+     Garante o tratamento tipográfico do preço mesmo que o css/styles.css
+     publicado esteja desatualizado. Pode ser movido para o styles.css.
+======================================================================= -->
+<style id="fix-precos-cotas">
+  .tier__price{
+    display:flex;
+    align-items:baseline;
+    gap:.26em;
+    margin:10px 0 20px;
+    font-family:var(--font-display,'Sora','Segoe UI',sans-serif);
+    font-weight:800;
+    font-size:clamp(34px,4.2vw,46px);
+    line-height:1;
+    letter-spacing:-.025em;
+    color:var(--wine,#5A1116);
+    font-variant-numeric:tabular-nums;
+  }
+  .tier__price .cur{
+    font-size:.40em;
+    font-weight:700;
+    line-height:1;
+    letter-spacing:.02em;
+    color:#8A6A55;
+    transform:translateY(-.08em);
+  }
+  .tier--master .tier__price{
+    font-size:clamp(42px,5.6vw,62px);
+    color:var(--amber,#F5C21A);
+    margin:6px 0 16px;
+  }
+  .tier--master .tier__price .cur{
+    color:var(--amber,#F5C21A);
+    opacity:.88;
+  }
+  @media (max-width:520px){
+    .tier__price{font-size:36px}
+    .tier--master .tier__price{font-size:44px}
+  }
+</style>
 </head>
 <body>
 
